@@ -14,18 +14,18 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 lang: en-US
-title: Sam Christensen
-email:
-description:
+title: Engineering Portfolio and Projects
+email: Samuel.David.Christensen@gmail.com
+description: By Sam Christensen
 baseurl: # the optional subpath of your site, e.g. "/blog"
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: https://5amuei.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 author:
-  name:
+  name: Sam Christensen
   twitter:
   picture:
-twitter_username:
-github_username:
-logo: # path of site logo, e.g. "/assets/images/logo.png"
+twitter_username: Danny C
+github_username: 5amuei
+logo: https://5amuei.github.io/assets/images/icon.png # path of site logo, e.g. "/assets/images/logo.png"
 search: # true, false (default)
 search_full_content: false # true, false (default)
 search_provider: # lunr (default), algolia
