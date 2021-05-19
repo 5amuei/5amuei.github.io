@@ -1,16 +1,41 @@
 ---
 layout: default - home
 ---
+<head><script src="https://kit.fontawesome.com/4600248190.js" crossorigin="anonymous"></script></head>
 
-{% assign cv = site.data.cv %}
-{% include cv/intro.html %}
 <html>
-<style>p { text-align: left; width: 50vw; margin-left: 10vw;}</style>
+<!--   Download Resume PDF   -->
+<style>
+    .button {
+        margin-left: 5%;
+        border: none;
+        border-radius: .25em;
+        color: white;
+        padding: 16px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    .button1 {background-color: #d72323;color: white;}
+    .button1:hover {background-color: #d76464;color: white;}
+    .button1:active {background-color:black;color: white;}
+    p { text-align: left; width: 80vw; margin-left:10vw;}
+</style>
+<!--This links to your pdf resume-->
+<a href="https://github.com/5amuei/5amuei.github.io/raw/1de2fdfe9c0af8c3430f647da50822790c5efd86/_includes/Sam-Christensen-Resume.pdf" download="Sam-Christensen-Resume.pdf">
+    <div>
+        <button class="button button1">
+            <i class="far fa-file-pdf" style="color:white; size:16px;"></i>
+            <b>Download Resume PDF</b>
+        </button>
+    </div>
+</a>
 
-<main id="main" class="page-content" aria-label="Content">
-  <div class="index inner">
-    <div>{{ content }}</div>
-    <div style="text-align: center;width: 90vw;">
+<!--Resume body-->
+    <div style="text-align: center;">
         <h1>Sam Christensen</h1>
         <h2>Samuel.David.Christensen@Gmail.com</h2>
     </div>
@@ -20,60 +45,44 @@ layout: default - home
 
     <div>
     <!--Experience-->
-    <h2 style="text-align: center;width: 90vw;">Experience</h2>
+    <h2 style="text-align: center;">Experience</h2>
         <!--Lyons Motor Car-->
-        <table style="width: 80vw; margin-left: 5vw; text-align: center; margin-bottom: 0%;">
-        <style>th {text-align: center;border: none;}</style>
-            <th>Lyons Motor Car - Mechanical Engineer</th><th>New York, New York Sep 2020 - Present</th>
+        <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
+            <th style="text-align: left; border:none;">Lyons Motor Car - Mechanical Engineer</th><th style="text-align: right; border:none;">New York, New York Sep 2020 - Present</th>
         </table>
-           
-        <div style="width: 50vw; margin-left:10vw; overflow: visible;">
             <p>Produced suspension and chassis components in SOLIDWORKS for production of Streamliner Super Sport</p>
             <p>Evaluated designs for interference, tolerance, and improved manufacturability</p>
             <p>Effectively corresponded remotely as part of a team of designers to meet deadlines while ensuring design quality</p>
-        </div>
 
         <!--Tesla-->
-        <table style="width: 80vw; margin-left: 5vw; text-align: center; margin-bottom: 0%;">
-            <style>th {text-align: center;border: none;}</style>
-            <th>Tesla - Production Control Equipment Engineering Intern</th><th>Fremont, California Jan 2019 – Jan 2020</th>
+        <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
+            <th style="text-align: left; border:none;">Tesla - Production Control Equipment Engineering Intern</th><th style="text-align: right; border:none;">Fremont, California Jan 2019 – Jan 2020</th>
         </table>
-            
-        <div style="width: 50vw; margin-left: 10vw; word-wrap: break-word;">
             <p>Provided mechanical design support to controls engineers to develop enhancements of model 3 instrument panel receiving conveyor leading to an 85% decrease in machine downtime</p>
             <p>Project management and design of ergonomic lift assist using rapid prototyping for handling of brake rotors by associates improving the safety of the process without decreasing cycle time</p>
             <p>Designed and coordinated the fabrication of dollies as part of a multi-departmental team for the addition of new vehicle parts to be installed on the model 3</p>
             <p>Utilized top-down and parametric design to create 3D models and technical drawings in CATIA to industry drafting standards using GD&T practices</p>
             <p>Drafted technical work instructions to aid in the installation and maintenance of production critical equipment to reduce the mean time to repair</p>
-        </div>
 
         <!--Texas Tech-->
-        <table style="width: 80vw; margin-left: 5vw; text-align: center; margin-bottom: 0%;">
-            <style>th {text-align: center;border: none;}</style>
-            <th>Texas Tech University – Machine Shop Student Assistant</th><th>Lubbock, Texas Jun 2018 – Dec 2018</th>
+        <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
+            <th style="text-align: left; border:none;">Texas Tech University – Machine Shop Student Assistant</th><th style="text-align: right; border:none;">Lubbock, Texas Jun 2018 – Dec 2018</th>
         </table>
-            
-        <div style="width: 50vw; margin-left: 10vw; word-wrap: break-word;">
             <p>Performed precision machine work on mills and lathes for research laboratories within a 0.002” tolerance</p>
             <p>Taught students to safely utilize shop equipment for academic projects including MIG and TIG welders, manual mills and lathes, and shop equipment</p>
-        </div>
 
         <!--Mazda-->
-        <table style="width: 80vw; margin-left: 5vw; text-align: center; margin-bottom: 0%;">
-            <style>th {text-align: center;border: none;}</style>
-            <th>Classic Mazda of Denton – Master Automotive Repair Technician</th><th>Denton, Texas Nov 2010 – May 2014</th>
+        <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
+            <th style="text-align: left; border:none;">Classic Mazda of Denton – Master Automotive Repair Technician</th><th style="text-align: right; border:none;">Denton, Texas Nov 2010 – May 2014</th>
         </table>
-            
-        <div style="width: 50vw; margin-left: 10vw; word-wrap: break-word;">
             <p>Collaborated with engineers from the Mazda headquarters to assist with new product failure analyses</p>
             <p>Performed quality repair work in accordance to factory standards using in-depth product knowledge</p>
             <p>Effectively explained technical diagnostics and repairs to customers without automotive repair knowledge</p>
-        </div>
     </div>
 
     <div>
     <!--Education-->
-    <h2 style="text-align: center;width: 90vw;">Education</h2>
+    <h2 style="text-align: center;">Education</h2>
         <!--Masters-->
         <table style="width: 50vw; margin-left: 20vw; margin-right: 20vw; margin-bottom: 5%">
             <style>th {border: none;}</style>
@@ -99,32 +108,24 @@ layout: default - home
         
     <div>
     <!--Academic Experience-->
-    <h2 style="text-align: center;width: 90vw;">Academic Experience</h2>
+    <h2 style="text-align: center;">Academic Experience</h2>
         <!--TTU FSAE President-->
-        <table style="width: 80vw; margin-left: 5vw; text-align: center; margin-bottom: 0%;">
-        <style>th {text-align: center;border: none;}</style>
-            <th>Texas Tech University Formula SAE – President</th><th> Lubbock, Texas Sep 2017 – Aug 2019</th>
+        <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
+            <th style="text-align: left; border:none;">Texas Tech University Formula SAE – President</th><th style="text-align: right; border:none;">Lubbock, Texas Sep 2017 – Aug 2019</th>
         </table>
-               
-        <div style="width: 50vw; margin-left:10vw; overflow: visible;">
             <p>Set design goals, timelines, and team objectives which led to an eight-place improvement in standing</p>
             <p>Managed and mentored a team of six design leads and fifty members</p>
             <p>Individually handled all administrational tasks including leading meetings, making purchases, and acting as the point of contact for university faculty and sponsors</p>
             <p>Obtained sponsorships worth $80,000+ to fund fabrication of the race car</p>
             <p>Organized outreach and sponsorship events to foster positive relationships with the community</p>
-        </div>
 
         <!--TTU FSAE Aerodynamics-->
-        <table style="width: 80vw; margin-left: 5vw; text-align: center; margin-bottom: 0%;">
-        <style>th {text-align: center;border: none;}</style>
-            <th>Texas Tech University Formula SAE – Aerodynamics Design Lead</th><th> Lubbock, Texas Sep 2017 – Aug 2019</th>
-        </table>
-                   
-        <div style="width: 50vw; margin-left:10vw; overflow: visible;">
+        <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
+            <th style="text-align: left; border:none;">Texas Tech University Formula SAE – Aerodynamics Design Lead</th><th style="text-align: right; border:none;">Lubbock, Texas Sep 2017 – Aug 2019</th>
+        </table>   
             <p>Produced aerodynamic design improvements and implemented features resulting in 186-pound downforce increase to improve driver confidence of vehicle handling characteristics</p>
             <p>Designed and analyzed body panels, air foils, and supporting composite structures in SOLIDWORKS with integrated Computational Fluid Dynamics (CFD) software</p>
             <p>Developed and fabricated male and female molds and tooling for composite part fabrication to produce aerodynamic components on site at Bell Helicopter</p>
-        </div>
     </div>
 </main>
 </html>
