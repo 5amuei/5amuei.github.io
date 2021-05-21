@@ -1,101 +1,178 @@
----
-layout: default
----
-
-<html>
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+    {% include head.html %}
+    <div class="canvas">
+        <div class="wrapper">
+          {% include masthead.html %}
+          <div class="initial-content">
+            {{ content }}
+          </div>
+  
+          <div class="search-content">
+            {% include search-form.html %}
+          </div>
+        </div>
+    </div>
+  
+    {% include scripts.html %}
+<!---->
 <title>Infiniti Engineering Academy</title>
-<head><script src="https://kit.fontawesome.com/4600248190.js" crossorigin="anonymous"></script><link rel="shortcut icon" href="/_includes/favicon.svg" /></head>
+<head><link rel="shortcut icon" href="/_includes/favicon.svg" /></head>
 
-
-<div class="banner">
-    <img src="/assets/images/infinitiBanner1.png" style="width: 100vw;">
+<div class="bannerTop" id="banner">
+    <img src="/assets/images/infinitiBanner2.png" style="width: 100vw;">
 </div>
 
 <div class="videoContainer">
-    <video autoplay muted replay controls>
-        <source src="/assets/videos/infEA2018US.mp4" type="video/mp4">
-    </video>
+        <video autoplay muted replay controls  style="width: 60vw;">
+            <source src="/assets/videos/infEA2018US.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<div class="bannerBottom">
+    <img src="/assets/images/infinitiBanner1.png" style="width: 100vw;">
 </div>
 
 <style>
-    .banner {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .bannerTop {
         position: absolute;
-        z-index: 1;
+        z-index: 103;
         left:0px;
-        top:120px;
+        top:10vh;
+    }
+
+    .bannerBottom {
+        position: absolute;
+        z-index: 101;
+        left:0px;
+        top:10vh;
     }
 
     .videoContainer {
         position: fixed;
+        z-index: 102;
         left: 0px;
-        top: 475px;
-        width: 1000px;
+        top: 30vh;
+        width:100%;
     }
 
     .textContainer {
-        position: relative;
-        z-index: 2;
-        left:10px;
-        top: 500px;
-        height: 100%;
+        position: absolute;
+        text-align: center;
+        z-index: 100;
+        right:40px;
+        top: 40vh;
+        width: 35vw;
+        
     }
 </style>
+<!---->
 
-<div class="textContainer">
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
-    test test test test test test test test test test test test test test test test test test test test test test test test <br>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
+
+    {% include skip-links.html %}
+
+    <div class="sidebar-toggle-wrapper">
+      {% if site.search %}
+        <button class="search-toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <title>{{ site.data.theme.t.search | default: 'Search' }}</title>
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+      {% endif %}
+
+      <button class="toggle navicon-button larr" type="button">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+      <div class="inner">
+        {% include navigation.html %}
+        {% include contact-list.html %}
+      </div>
+    </div>
+
+    
+
+<div class="textContainer" element.scrollTo(0, 100000);>
+    <img src="/assets/images/ieaLogo.png" style="width: 100%;">
+
+<h3>Summary</h3>
+
+Sam was a very personal young man, with a clear
+passion for mechanical engineering. I was impressed
+with his people skills and he scored well in the team
+events. I wish Sam good luck with his future career.<br><br>
+
+Andy Todd, Director, Body & Exterior Engineering,
+Nissan Technical Centre Europe.<br><br>
+
+Sam was a great sport with a fun attitude and isn’t
+afraid to speak up. He is able to think through issues and
+to focus on the task. I know that Sam will do well in the
+engineering world.<br><br>
+
+Greg Ramsey, Senior Manager, SV/NSA, INFINITI<br><br>
+
+<h3>Interview</h3>
+
+Sam was good at building rapport with the judges.
+Some of his answers were not as strong as the other
+finalists. I would suggest Sam reflects on how he could
+have given more concise answers that still conveyed his
+technical knowledge and unique selling proposition.<br><br>
+
+Andy Todd, Director, Body & Exterior Engineering,
+Nissan Technical Centre Europe.<br><br>
+
+Sam seemed confident and at ease with the judges but at times came across as too laid back. When
+asked about what he was looking for in F1 and road cars, he appeared indecisive as if he hadn’t
+given it much thought. I recommend that in the future, Sam be prepared to provide a clear picture
+of where he wants to go and what he wants to do.<br><br>
+
+Greg Ramsey, Senior Manager, SV/NSA, INFINITI<br><br>
+
+<h3>Harvard Challenge</h3>
+
+Sam did well in the Harvard challenge with a team that had some very vocal people with opposing
+views. Sam did a great job of keeping the team moving forward, clarifying points to make sure all
+were on the same page, and helped organize the team. Sam should consider taking on more of a
+leadership role in the future. He and the others on the team just assumed that Stan would present.
+Another lesson to be learned by everyone on the team: ask questions to make sure you have the
+data you need for the best decisions.<br><br>
+
+Greg Ramsey, Senior Manager, SV/NSA, INFINITI <br><br>
+
+<h3>Dragster Challenge</h3><br>
+
+Sam had a strong contribution to make in the Dragster Challenge, despite the strength of Stan. The
+one aspect of his performance that really stood out was his strength of persuading and influencing
+his team mates. He made a strong impression, gained commitment from others, promoted his ideas
+well and negotiated well when conflict occurred. One area for Sam to consider was planning and
+organising – I only observed his group in the second half of the event, but I wondered if he had
+contributed ideas on how the team should organise the test runs during the free practise session.<br><br>
+
+Andy Todd, Director, Body & Exterior Engineering, Nissan Technical Centre Europe.<br><br>
+
+I observed the second half of the challenge so didn’t get to see how the team started up. Sam made
+a good impression as I observed him being a key part of the team. Ultimately, the team did not
+perform well in the races. Although there was discussion on information and recommendations,
+there seemed to be 3 separate groups doing their own thing. I encourage Sam to look for
+opportunities to influence and bring everyone together as a more cohesive team since he has the
+communication skills and approachability for it.<br><br>
+
+Greg Ramsey, Senior Manager, SV/NSA, INFINITI<br><br>
+<div id="bottom"></div>
 </div>
+</body>
 </html>
