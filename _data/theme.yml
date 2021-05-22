@@ -35,5 +35,12 @@ google_fonts:
 
 navigation_pages:
   - resume.md
+  - portfolio.md
+  - FSAE.md
   - infiniti.md
+  - keyboard.md
+  - lyons.md
+  - suburban.md
+  - tesla.md
+  - boxtruck.md
 #  THIS IS THE LIST OF PAGES ON THE LEFT MENU, MAKE SURE TO SPELL THEM RIGHT!!!!!!!!!
