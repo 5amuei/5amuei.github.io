@@ -1,4 +1,0 @@
----
-title: Suburban
-layout: suburban
----

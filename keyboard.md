@@ -1,4 +1,0 @@
----
-title: Keyboard
-layout: keyboard
----

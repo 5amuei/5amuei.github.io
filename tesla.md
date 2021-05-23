@@ -1,4 +1,0 @@
----
-title: Tesla
-layout: tesla
----

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<title>Sam Christensen | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+
+    header { z-index:1;}
+    footer { z-index:1;}
+
+    .slideContainer {
+        position: fixed;
+        z-index: 1000;
+        left: 0px;
+        top: 10%;
+        height:90%;
+        width:100vw;
+    }
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body {
+  font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#timeline {
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(224, 37, 27, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.44rem;
+  font-weight: normal;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.tl-year p {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.728rem;
+  line-height: 0;
+}
+
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+</style>
+<body>
+  <header style="position:fixed; background-color: white; min-width:100%; height:10vh;">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar"></div>
+    <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/home.html" class="w3-bar-item w3-button w3-wide">SAM CHRISTENSEN</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/home.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/portfolio.html" class="w3-bar-item w3-button"></i> PORTFOLIO</a>
+      <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+      <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/contact.html" class="w3-bar-item w3-button"></i> CONTACT</a>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:1000;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/resume.html" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
+  <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+</header>
+<!--Body-->
+<section id="timeline">
+
+
+  <div class="tl-item">
+    
+
+        <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg
+)"></div>
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">Suburban</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Rebuilding and modifying a 1999 Suburban</h1>
+      <p>Stuff got fixed.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)">
+      
+    </div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">Lyons</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">An overview of my roles</h1>
+      <p>I did/am doing some stuff.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg
+)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">Tesla</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">An overview of my roles</h1>
+      <p>I did some stuff.</p>
+    </div>
+
+  </div>
+    <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/9/responsibility_3-54e5a756.jpg
+)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">Keyboard</p>
+    </div>
+
+    <div class="tl-content">
+      <h1>The project details of my custom keyboard</h1>
+      <p>I type stuff.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    <a href="file:///C:/Users/5am/Desktop/5amuei.github.io/html/infiniti.html" class="w3-bar-item w3-button">
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/3/strips_sheets_coilsdrums-b0b72ee3.png)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">Infiniti</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">2018 Infiniti Engineering Academy 2018 Finalist</h1>
+      <p>I did top ten stuff but not top 3 stuff.</p>
+    </div>
+    </a>
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/b/header_wieland_eMobility_1-f1ea109f.jpg)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">FormulaSAE</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Why I REALLY went to college</h1>
+      <p>Deffinitly not a reoccuring nightmare I can never wake up from.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/6/kachel_careers_spot-eeeb207b.jpg)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">TinyHome</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Housing is very expensive</h1>
+      <p>Landlords hate this one simple trick!</p>
+    </div>
+
+  </div>
+  
+    <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/3/strips_sheets_coilsdrums-b0b72ee3.png)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2016</p>
+    </div>
+
+    <div class="tl-content">
+      <h1>Lorem ipsum dolor sit</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/2/home_slider_empowering_success_thenewbrandpage-c8c3fca2.jpg)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2017</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/b/header_wieland_eMobility_1-f1ea109f.jpg)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2018</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://www.wieland.com/assets/images/d/header_wieland_ny-1cdf09e4.jpg)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2019</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Footer -->
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>

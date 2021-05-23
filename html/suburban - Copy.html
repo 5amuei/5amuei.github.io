@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+<style>
+  .bannerTop {
+        position: fixed;
+        z-index: 101;
+        left:50vw;
+        top:0px;
+        width:50vw;
+        min-height: 15vh;
+    }
+  .defaultContainer {
+    position: fixed;
+        left: 0%;
+        top: 0%;
+        width:100vw;
+        
+    }
+</style>
+
+<html>
+  <html lang="{{ page.lang | default: site.lang | default: 'en-US' }}" class="no-js">
+    {% include head.html %}
+    <div class="canvas" style="z-index:-1;position:fixed;">
+        <div class="wrapper">
+          {% include masthead.html %}
+          <div class="initial-content">
+            {{ content }}
+          </div>
+  
+          <div class="search-content">
+            {% include search-form.html %}
+          </div>
+        </div>
+    </div>
+  
+    {% include scripts.html %}
+
+    <div class="bannerTop" id="banner">
+      <img src="/assets/images/plainBanner.png" style="z-index: 101;min-height: 15vh;width:50vw;">
+    </div>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %} {{ page.title | slugify }}">
+
+    {% include skip-links.html %}
+
+    <div class="sidebar-toggle-wrapper" style="z-index:102;position:fixed;">
+      {% if site.search %}
+        <button class="search-toggle" type="button" style="z-index:200;">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <title>{{ site.data.theme.t.search | default: 'Search' }}</title>
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+      {% endif %}
+
+      <button class="toggle navicon-button larr" type="button" style="z-index:200;">
+        <span class="toggle-inner">
+          <span class="sidebar-toggle-label visually-hidden">{{ site.data.theme.t.menu | default: 'Menu' }}</span>
+          <span class="navicon"></span>
+        </span>
+      </button>
+    </div>
+
+    <div id="sidebar" class="sidebar" style="z-index:200;">
+      <div class="inner">
+        {% include navigation.html %}
+        {% include contact-list.html %}
+      </div>
+    </div>
+  
+    <!--//////////////////////-->
+    <div class="cont s--inactive">
+      <!-- cont inner start -->
+      <div class="cont__inner">
+        <!-- el start -->
+        <div class="el">
+          <div class="el__overflow">
+            <div class="el__inner">
+              <div class="el__bg"></div>
+              <div class="el__preview-cont">
+                <h2 class="el__heading">Section 1</h2>
+              </div>
+              <div class="el__content">
+                <div class="el__text">Whatever</div>
+                <div class="el__close-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="el__index">
+            <div class="el__index-back">1</div>
+            <div class="el__index-front">
+              <div class="el__index-overlay" data-index="1">1</div>
+            </div>
+          </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+          <div class="el__overflow">
+            <div class="el__inner">
+              <div class="el__bg"></div>
+              <div class="el__preview-cont">
+                <h2 class="el__heading">Section 2</h2>
+              </div>
+              <div class="el__content">
+                <div class="el__text">Whatever</div>
+                <div class="el__close-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="el__index">
+            <div class="el__index-back">2</div>
+            <div class="el__index-front">
+              <div class="el__index-overlay" data-index="2">2</div>
+            </div>
+          </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+          <div class="el__overflow">
+            <div class="el__inner">
+              <div class="el__bg"></div>
+              <div class="el__preview-cont">
+                <h2 class="el__heading">Section 3</h2>
+              </div>
+              <div class="el__content">
+                <div class="el__text">Whatever</div>
+                <div class="el__close-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="el__index">
+            <div class="el__index-back">3</div>
+            <div class="el__index-front">
+              <div class="el__index-overlay" data-index="3">3</div>
+            </div>
+          </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+          <div class="el__overflow">
+            <div class="el__inner">
+              <div class="el__bg"></div>
+              <div class="el__preview-cont">
+                <h2 class="el__heading">Section 4</h2>
+              </div>
+              <div class="el__content">
+                <div class="el__text">Whatever</div>
+                <div class="el__close-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="el__index">
+            <div class="el__index-back">4</div>
+            <div class="el__index-front">
+              <div class="el__index-overlay" data-index="4">4</div>
+            </div>
+          </div>
+        </div>
+        <!-- el end -->
+        <!-- el start -->
+        <div class="el">
+          <div class="el__overflow">
+            <div class="el__inner">
+              <div class="el__bg"></div>
+              <div class="el__preview-cont">
+                <h2 class="el__heading">Section 5</h2>
+              </div>
+              <div class="el__content">
+                <div class="el__text">Whatever</div>
+                <div class="el__close-btn"></div>
+              </div>
+            </div>
+          </div>
+          <div class="el__index">
+            <div class="el__index-back">5</div>
+            <div class="el__index-front">
+              <div class="el__index-overlay" data-index="5">5</div>
+            </div>
+          </div>
+        </div>
+        <!-- el end -->
+      </div>
+      <!-- cont inner end -->
+    </div>
+    
+    <a href="https://dribbble.com/shots/2802024-Satellite-Website-Prototype" target="_blank" class="icon-link">
+      <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+    </a>
+    <a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+      <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+    </a>
+
+
+
+  
+  </body>
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var $cont = document.querySelector('.cont');
+var $elsArr = [].slice.call(document.querySelectorAll('.el'));
+var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+
+setTimeout(function() {
+  $cont.classList.remove('s--inactive');
+}, 200);
+
+$elsArr.forEach(function($el) {
+  $el.addEventListener('click', function() {
+    if (this.classList.contains('s--active')) return;
+    $cont.classList.add('s--el-active');
+    this.classList.add('s--active');
+  });
+});
+
+$closeBtnsArr.forEach(function($btn) {
+  $btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    $cont.classList.remove('s--el-active');
+    document.querySelector('.el.s--active').classList.remove('s--active');
+  });
+});
+</script>
