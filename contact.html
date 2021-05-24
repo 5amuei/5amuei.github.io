@@ -13,47 +13,22 @@
     header { z-index:1;}
     footer { z-index:1;}
 
-    [data-component="slideshow"] .slide {
-        display: none;
-      }
-    
-      [data-component="slideshow"] .slide.active {
-        display: block;
-      }
-
-      .background-image {
-        background-position: center center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-      }
-
-      .welcomeText{
-        position: absolute;
-        text-align: left;
-        color:white;
-        text-shadow: 2px 2px 10px black;
-        font-size:75px;
-        z-index: 1001;
-        left: 5vw;
-        top: 60vh;
-      }
-
-    .slideContainer {
-        position: fixed;
-        z-index: 1000;
-        left: 0px;
-        top: 10%;
-        height:90%;
-        width:100vw;
+    .contactText{
+      position: absolute;
+      text-align: center;
+      color:black;
+      font-size:75px;
+      z-index: 1001;
+      width: 100%;
+      top: 40vh;
     }
 
-.w3-bar .w3-button {
+    .w3-bar .w3-button {
   padding: 16px;
 }
 </style>
 <body>
-  <header style="position:fixed; background-color: white; min-width:100%; height:10vh;">
+  <header style="position:fixed; background-color: white; min-width:100%; height:5vh;">
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar"></div>
@@ -85,32 +60,10 @@
 
 </header>
 
-<div class="welcomeText">
-    <b>Welcome,<br>
-    I am Sam Christensen and this is my portfolio.</b>
+<div class="contactText">
+    <b>Sam Christensen<br>
+    contact info goes here</b>
 </div>
-    <!-- slideshow-->
-    <div class="slideContainer">
-      <div id="slideshow" data-component="slideshow">
-          <div role="list">
-            <div class="slideContainer">
-              <div class="slide background-image" style="background-image: url('/assets/images/slide1.jpg');">
-                <img src="/assets/images/slide1.jpg" style="opacity: 0;" alt="">
-              </div>
-            </div>
-            <div class="slideContainer">
-              <div class="slide background-image" style="background-image: url('/assets/images/slide2.jpg');">
-                <img src="/assets/images/slide2.jpg"  style="opacity: 0;" alt="">
-              </div>
-            </div>
-            <div class="slideContainer">
-              <div class="slide background-image"  style="background-image: url('/assets/images/slide3.jpg');">
-                <img src="/assets/images/slide3.jpg"  style="opacity: 0;" alt="">
-                </div>
-            </div>
-          </div>
-        </div>
-  </div>
 
 
 <!-- Footer -->
@@ -140,27 +93,6 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
-
-var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-    slideshows.forEach(initSlideShow);
-    
-    function initSlideShow(slideshow) {
-    
-      var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-    
-      var index = 0, time = 5000;
-      slides[index].classList.add('active');
-    
-      setInterval( () => {
-        slides[index].classList.remove('active');
-        
-        index++;
-        if (index === slides.length) index = 0;
-    
-        slides[index].classList.add('active');
-    
-      }, time);
-    }
 </script>
 
 </body>
