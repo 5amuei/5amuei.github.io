@@ -152,13 +152,13 @@ body {
 .el:nth-child(1) .el__bg:before {
   /* -webkit-transition-delay: 0s;
     transition-delay: 0s; */
-  background-image: url("C:/Users/5am/5amuei.github.io/assets/imagesonepgscr-3.jpg"); /*把图片放在伪元素中*/
+  background-image: url("/assets/images/suburbanBanner1.jpg"); /*把图片放在伪元素中*/
 }
 
 .el:nth-child(2) .el__bg:before {
   /* -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s; */
-  background-image: url("C:/Users/5am/5amuei.github.io/assets/onepgscr-4.jpg");
+  background-image: url("/assets/images/suburbanBanner2.jpg");
 }
 .el:nth-child(3) .el__bg:before {
   /* -webkit-transition-delay: 0.2s;
