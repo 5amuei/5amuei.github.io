@@ -16,6 +16,7 @@
     header { z-index:1;}
     footer { z-index:1;}
 
+    
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
@@ -60,7 +61,7 @@
 }
 .tl-item:hover {
   width: 30% !important;
-}
+  }
 .tl-item:hover:after {
   opacity: 0;
 }
@@ -90,9 +91,17 @@
 .tl-content h1 {
   font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
-  color: #1779cf;
+  color: #fff;
+  text-shadow: 2px 2px 10px black;
   font-size: 1.44rem;
   font-weight: normal;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 5em;
+  padding-top: 100vh;
+  padding-bottom: 100vh;
 }
 
 .tl-year {
@@ -111,7 +120,10 @@
   transform: rotate(290deg);
   white-space:nowrap;
 }
-
+.tl-item:hover .titleBlock {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 .tl-bg {
   transform: translate3d(0, 0, 0);
   position: absolute;
@@ -165,17 +177,18 @@
 
 
   <div class="tl-item">
-    <a href="/suburban.html">
       <div class="tl-bg" style="background-image: url(/assets/images/suburbanPortBanner.png)"></div>
       <div class="tl-year">
         <div class="f2 heading--sanSerif titleBlock">Suburban</div>
       </div>
+      <a href="/suburban.html">
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">Rebuilding and modifying a 1999 Suburban</h1>
-      <p>Stuff got fixed.</p>
     </div>
     </a>
   </div>
+
+
 
   <div class="tl-item">
     <a href="/lyons.html">
@@ -185,7 +198,6 @@
       </div>
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">An overview of my roles</h1>
-      <p>I did/am doing some stuff.</p>
     </div>
     </a>
   </div>
@@ -198,7 +210,6 @@
       </div>
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">An overview of my roles</h1>
-      <p>I did some stuff.</p>
     </div>
     </a>
   </div>
@@ -211,7 +222,6 @@
     </div>
     <div class="tl-content">
       <h1>The project details of my custom keyboard</h1>
-      <p>I type stuff.</p>
     </div>
     </a>
   </div>
@@ -224,7 +234,6 @@
     </div>
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">2018 Infiniti Engineering Academy 2018 Finalist</h1>
-      <p>I did top ten stuff but not top 3 stuff.</p>
     </div>
     </a>
   </div>
@@ -237,7 +246,6 @@
     </div>
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">Why I REALLY went to college</h1>
-      <p>Deffinitly not a reoccuring nightmare I can never wake up from.</p>
     </div>
     </a>
   </div>
@@ -250,7 +258,6 @@
     </div>
     <div class="tl-content">
       <h1 class="f3 text--accent ttu">Housing is very expensive</h1>
-      <p>Landlords hate this one simple trick!</p>
     </div>
     </a>
   </div>
@@ -263,7 +270,6 @@
     </div>
     <div class="tl-content">
       <h1>Lorem ipsum dolor sit</h1>
-      <p>Lorem ipsum dolor sit amet, consec</p>
     </div>
     </a>
   </div>
