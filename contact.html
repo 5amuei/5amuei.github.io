@@ -6,27 +6,53 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
-    body   { z-index:1;}
-    header { z-index:1;}
-    footer { z-index:1;}
-
     .contactText{
-      position: absolute;
+      position: relative;
       text-align: center;
       color:black;
-      font-size:75px;
-      z-index: 1001;
       width: 100%;
-      top: 40vh;
+      top: 20vh;
+    }
+
+    .button {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-top: 1%;
+      padding: 0% 2%;
+      border: none;
+      border-radius: .25em;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 52px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1 {background-color: #d72323;color: white;}
+    .button1:hover {background-color: #d76464;color: white;}
+    .button1:active {background-color:black;color: white;}
+
+    .buttonPhone {
+      background:none;
+      border:none;
+      margin:0;
+      padding:0;
+      cursor: pointer;
+      color:white;
     }
 
     .w3-bar .w3-button {
   padding: 16px;
 }
 </style>
+<script src="https://kit.fontawesome.com/4600248190.js" crossorigin="anonymous"></script>
 <body>
   <header style="position:fixed; background-color: white; min-width:100%; height:5vh;">
 <!-- Navbar (sit on top) -->
@@ -61,10 +87,42 @@
 </header>
 
 <div class="contactText">
-    <b>Sam Christensen<br>
-    contact info goes here</b>
+  <b style="font-size:75px;">Sam Christensen</b><br>
 </div>
 
+<div style="margin-top: 22vh;">
+  <button class="button button1">
+    <i class="fas fa-mobile-alt" style="color:white;font-size: 52px;pointer-events:none;"></i>
+    <input onclick="showPhone()" class="buttonPhone" type="button" id="phoneNumber" value="Phone" style="font-weight:bold;"></input>
+  </button>
+
+    <a href="mailto:Samuel.David.christensen@gmail.com">
+      <div>
+          <button class="button button1">
+              <i class="fas fa-envelope-open-text" style="color:white;"></i>
+              <b>Email</b>
+          </button>
+      </div>
+    </a>
+
+    <a href="https://www.linkedin.com/in/samuel-christensen-a32a521b3/">
+      <div>
+          <button class="button button1">
+              <i class="fab fa-linkedin" style="color:white;"></i>
+              <b>LinkedIn</b>
+          </button>
+      </div>
+    </a>
+
+    <a href="https://github.com/5amuei">
+      <div>
+          <button class="button button1">
+              <i class="fab fa-github-square" style="color:white;"></i>
+              <b>GitHub</b>
+          </button>
+      </div>
+    </a>
+  </div>
 
 <!-- Footer -->
  
@@ -92,6 +150,12 @@ function w3_open() {
 // Close the sidebar with the close button
 function w3_close() {
     mySidebar.style.display = "none";
+}
+// show phone number
+function showPhone() {
+    var elem = document.getElementById("phoneNumber");
+    if (elem.value=="Phone") elem.value = "727-312-6717";
+    else elem.value = "Phone";
 }
 </script>
 
