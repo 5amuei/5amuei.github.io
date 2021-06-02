@@ -1,22 +1,57 @@
-var $cont = document.querySelector('.cont');
-var $elsArr = [].slice.call(document.querySelectorAll('.el'));//[].slice.call这种方式可以将伪数组变为数组，才能使用forEach遍历
-var $closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+$(document).ready(function(){
 
-// console.log($elsArr);
-$elsArr.forEach(function($el) {
-    $el.addEventListener('click', function() {
-      if (this.classList.contains('s--active')) return;//如果已经点击放大了模块那么就return，不再执行下面代码
-      $cont.classList.add('s--el-active');//给.cont类元素添加s--el-active类
-      this.classList.add('s--active');//给点击的.el类添加s--active
-    });
-  });
+   var $sm = 480;
+   var $md = 768;
 
-  
-  //点击关闭按钮时触发的事件
-$closeBtnsArr.forEach(function($btn) {
-  $btn.addEventListener('click', function(e) {
-    e.stopPropagation();//防止事件冒泡
-    $cont.classList.remove('s--el-active');//关闭放大模块时给.cont类元素移除s--el-active类
-    document.querySelector('.el.s--active').classList.remove('s--active');//找到.el类中包含s--active类的元素，并把s--active移除
+   function resizeThis() {
+      $imgH = $('.middle img').width();
+      if ($(window).width() >= $sm) {
+         $('.left,.right,.section').css('height', $imgH);
+      } else {
+         $('.left,.right,.section').css('height', 'auto');
+      }
+   }
+
+   resizeThis();
+
+   $(window).resize(function(){
+      resizeThis();
+   });
+
+   $(window).scroll(function() {
+      $('.section').each(function(){
+         var $elementPos = $(this).offset().top;
+         var $scrollPos = $(window).scrollTop();
+
+         var $sectionH = $(this).height();
+         var $h = $(window).height();
+         var $sectionVert = (($h/2)-($sectionH/4));
+
+
+         if (($elementPos - $sectionVert) <= $scrollPos && ($elementPos - $sectionVert) + $sectionH > $scrollPos) {
+            $(this).addClass('animate');
+         } else {
+            $(this).removeClass('animate');
+         }
+      });
+   });
+
+   $('.btn-primary').click(function(){
+      alert('I lied');
+   });
+});
+
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
   });
 });
