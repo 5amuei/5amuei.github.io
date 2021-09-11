@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<title>Sam Christensen | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif;}
+
+    body { z-index:1;background-color: #2e2e2e;font-family: "Raleway", sans-serif;}
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+
+    header {
+      position:fixed;
+      z-index:1;
+      background-color: #2e2e2e;
+      min-width:100%;
+      height:4vh;
+      z-index:3;
+      color:#fff;
+    }
+
+
+    footer { z-index:1;}
+
+    
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+#timeline {
+  display: flex;
+  top: 4vh;
+  background-color: #2e2e2e;
+}
+
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 96vh;
+  top: 4vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  transform: translate3d(0, 0, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4vh;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+  }
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  filter: grayscale(0);
+}
+
+.tl-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 2px 2px 10px black;
+  font-size: 1.44rem;
+  font-weight: normal;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 5em;
+  padding-top: 100vh;
+  padding-bottom: 100vh;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  
+}
+.tl-year .titleBlock {
+  font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 4.728rem;
+  line-height: 0;
+  text-shadow: 2px 2px 10px black;
+  transform: rotate(290deg);
+  white-space:nowrap;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.tl-item:hover .titleBlock {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.tl-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
+}
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+</style>
+
+<header style="position:fixed; background-color: #2e2e2e; min-width:100%; height:3vh; z-index:1; color:#fff;">
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <a href="/home.html" class="w3-bar-item w3-button w3-wide">SAM CHRISTENSEN</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="/home.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="/portfolio.html" class="w3-bar-item w3-button"></i> PORTFOLIO</a>
+      <a href="/resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
+      <a href="/contact.html" class="w3-bar-item w3-button"></i> CONTACT</a>
+      
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:1000;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="/home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="/portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="/resume.html" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
+  <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+
+</header>
+<!--Body-->
+<body>
+<section id="timeline">
+
+
+  <div class="tl-item">
+      <div class="tl-bg" style="background-image: url(/assets/images/portfolio/suburbanPortBanner.png)"></div>
+      <div class="tl-year">
+        <div class="f2 heading--sanSerif titleBlock">Suburban</div>
+      </div>
+      <a href="/suburban.html">
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Rebuilding and modifying a 1999 Suburban</h1>
+    </div>
+    </a>
+  </div>
+
+
+
+  <div class="tl-item">
+    <a href="/lyons.html">
+      <div class="tl-bg" style="background-image: url(/assets/images/portfolio/lyonsPortBanner.png)"></div>
+      <div class="tl-year">
+        <div class="f2 heading--sanSerif titleBlock">Lyons Motor Car</div>
+      </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">My role in the development of the Streamliner Super Sport</h1>
+    </div>
+    </a>
+  </div>
+
+  <div class="tl-item">
+    <a href="/404.html">
+      <div class="tl-bg" style="background-image: url(/assets/images/portfolio/teslaPortBanner.png)"></div>
+      <div class="tl-year">
+        <div class="f2 heading--sanSerif titleBlock">Tesla</div>
+      </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">An overview of my projects during my internship at Tesla</h1>
+    </div>
+    </a>
+  </div>
+
+  <div class="tl-item">
+    <a href="/404.html">
+      <div class="tl-bg" style="background-image: url(/assets/images/portfolio/keyboardPortBanner.png)"></div>
+      <div class="tl-year">
+        <div class="f2 heading--sanSerif titleBlock">Keyboard</div>
+    </div>
+    <div class="tl-content">
+      <h1>The project details of the keyboard I designed and fabricated</h1>
+    </div>
+    </a>
+  </div>
+
+  <div class="tl-item">
+    <a href="/infiniti.html">
+      <div class="tl-bg" style="background-image: url(/assets/images/portfolio/infinitiPortBanner.png)"></div>
+      <div class="tl-year">
+        <div class="f2 heading--sanSerif titleBlock">Infiniti</div>
+    </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">My experience as a 2018 Infiniti Engineering Academy Finalist</h1>
+    </div>
+    </a>
+  </div>
+
+  <div class="tl-item">
+    <a href="/404.html">
+    <div class="tl-bg" style="background-image: url(/assets/images/portfolio/fsaePortBanner.png)"></div>
+    <div class="tl-year">
+      <div class="f2 heading--sanSerif titleBlock">Formula SAE</div>
+    </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">My involvment in the TTU Formula SAE Team</h1>
+    </div>
+    </a>
+  </div>
+
+  <div class="tl-item">
+    <a href="/404.html">
+    <div class="tl-bg" style="background-image: url(/assets/images/portfolio/tinyhousePortBanner.png)"></div>
+    <div class="tl-year">
+      <div class="f2 heading--sanSerif titleBlock">Tiny House</div>
+    </div>
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">An open house of the tiny home I built during my time at Tesla</h1>
+    </div>
+    </a>
+  </div>
+  
+  <div class="tl-item">
+    <a href="/404.html">
+    <div class="tl-bg" style="background-image: url(/assets/images/portfolio/3dprintingPortBanner.png)"></div>
+    <div class="tl-year">
+      <div class="f2 heading--sanSerif titleBlock">3-D Printing</div>
+    </div>
+    <div class="tl-content">
+      <h1>A few of the projects I have done with my Prusa MINI</h1>
+    </div>
+    </a>
+  </div>
+</section>
+
+
+<!-- Footer -->
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+</script>
+
+</body>
+</html>
