@@ -12,11 +12,28 @@
          </div>
          
          <div class="left title">
-            <div class="content">
-               <h2>A glorious nature shot.</h2>
-               <p>Wow. What a wonderful image. And look! there are even more images on the right side. Amazing. If you click below, I bet you'll get teleported to a magical land.</p>
-               <a href="#" class="btn-primary">Learn more</a>
-            </div>
+            <link rel="stylesheet" href="/styles/lyonsReset.css"> <!--     CSS reset     -->
+            <link rel="stylesheet" href="/styles/lyonsStyle.css"> <!--     Resource style     -->
+            <div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
+               <div>
+                  <figure class="product-viewer">
+                     <img src="/assets/images/lyons/img-loading.jpg" alt="Product Preview">
+                     <div class="product-sprite" data-image="/assets/images/lyons/img-sprite.png"></div>
+                  </figure> <!--     .product-viewer     -->
+            
+                  <div class="cd-product-viewer-handle">
+                     <span class="fill"></span>
+                     <span class="handle">Handle</span>
+                  </div>
+               </div> <!--     .cd-product-viewer-handle     -->
+            </div> <!--     .cd-product-viewer-wrapper     -->
+
+            <!--     SCRIPTS     -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+            <script src="/scripts/lyons/jquery.mobile.custom.min.js"></script>
+            <script src="/scripts/lyons/main.js"></script>
+            <script src="/scripts/lyons/modernizr.js"></script> <!--     Modernizr     -->
+            
          </div>
          
          <div class="right tiles">
