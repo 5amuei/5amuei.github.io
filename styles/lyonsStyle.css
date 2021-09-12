@@ -25,7 +25,7 @@ Main Components
 -------------------------------- */
 .cd-product-viewer-wrapper {
   text-align: center;
-  padding: 2em 0;
+  /*padding: 2em 0;*/
 }
 .cd-product-viewer-wrapper > div {
   display: inline-block;
