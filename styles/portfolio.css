@@ -192,13 +192,21 @@ body {
 }
 .section .middle {
   background: slategray;
-  z-index: 2;
+  z-index: 30;
   padding: 0;
 }
 .section .middle img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.section .right {
+  z-index:20;
+}
+
+.section .left {
+  z-index:10;
 }
 
 @-webkit-keyframes bounce {
