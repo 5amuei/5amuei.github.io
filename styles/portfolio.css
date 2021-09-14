@@ -214,7 +214,7 @@ body {
 .section .left {
   z-index:10;
 }
-.videoContainer {
+.videoContainer .video {
   position: relative;
   object-fit: contain;
   top: 30%;
