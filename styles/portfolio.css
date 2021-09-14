@@ -214,6 +214,11 @@ body {
 .section .left {
   z-index:10;
 }
+.videoContainer {
+  position: relative;
+  object-fit: contain;
+  height: 70%;
+}
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
