@@ -217,7 +217,7 @@ body {
 .videoContainer .video {
   position: relative;
   object-fit: contain;
-  top: 30%;
+  top: 27%;
   width: 100%;
   height: auto;
 }
