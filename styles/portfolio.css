@@ -138,6 +138,7 @@ body {
 .banner img {
   object-fit: contain;
   position: absolute;
+  z-index: 50;
 }
 .section .title {
   background: #cccccc;
