@@ -135,8 +135,14 @@ body {
     left: 66.66%;
   }
 }
+.section .banner {
+  object-fit: contain;
+  position: absolute;
+  top:0%;
+  left: 33.33%;
+}
 .section .title {
-  background: tomato;
+  background: #cccccc;
 }
 .section .title h2 {
   margin-top: 0;
