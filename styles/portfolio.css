@@ -217,7 +217,9 @@ body {
 .videoContainer {
   position: relative;
   object-fit: contain;
-  height: 70%;
+  top: 30%;
+  width: 100%;
+  height: auto;
 }
 
 @-webkit-keyframes bounce {
