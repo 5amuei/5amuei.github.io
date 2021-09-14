@@ -197,7 +197,7 @@ body {
   }
 }
 .section .middle {
-  background: slategray;
+  background: #2e2e2e;
   z-index: 30;
   padding: 0;
 }
