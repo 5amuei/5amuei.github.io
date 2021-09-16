@@ -135,10 +135,10 @@ body {
   }
 }
 .banner {
-  object-fit: contain;
-  z-index: 50;
-  position:absolute;
-  top: 0%;
+  object-fit: contain   !important;
+  z-index: 50           !important;
+  position:absolute     !important;
+  top: 0%               !important;
 }
 .section .title {
   background: #cccccc;
