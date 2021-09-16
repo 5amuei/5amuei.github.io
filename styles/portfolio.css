@@ -135,6 +135,7 @@ body {
   }
 }
 .banner img {
+  bottom: 75%;
   object-fit: contain;
   position: absolute;
   z-index: 50;
