@@ -217,16 +217,18 @@ body {
   z-index:10;
 }
 .videoContainer {
+  width: 100%;
+  padding-top: 75%;
+  height: 0px;
   position: relative;
-  object-fit: contain;
-  top: 27%;
-  width: 100%   !important;
-  height: auto  !important;
 }
 
 .video {
   width: 100%   !important;
-  height: auto  !important;
+  height: 100%  !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 @-webkit-keyframes bounce {
