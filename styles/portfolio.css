@@ -135,9 +135,7 @@ body {
   }
 }
 .banner {
-  bottom: 75%;
   object-fit: contain;
-  position: absolute;
   z-index: 50;
 }
 .section .title {
@@ -202,8 +200,10 @@ body {
   padding: 0;
   width: 33.333333333%;
   height: auto;
+  object-fit: contain;
 }
 .section .middle img {
+  min-width: 100%;
   width: 100%;
   height: auto;
   display: block;
