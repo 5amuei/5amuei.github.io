@@ -217,7 +217,7 @@ body {
   z-index:10;
 }
 .videoContainer {
-  top: 25%;
+  bottom: 0;
   width: 100%;
   padding-top: 75%;
   height: 0px;
