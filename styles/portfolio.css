@@ -134,7 +134,7 @@ body {
     left: 66.66%;
   }
 }
-.banner img {
+.banner {
   bottom: 75%;
   object-fit: contain;
   position: absolute;
