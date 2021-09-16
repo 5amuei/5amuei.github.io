@@ -200,6 +200,8 @@ body {
   background: #2e2e2e;
   z-index: 30;
   padding: 0;
+  width: 33.333333333%;
+  height: auto;
 }
 .section .middle img {
   width: 100%;
