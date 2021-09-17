@@ -139,6 +139,9 @@ body {
   position:absolute     !important;
   top: 0%               !important;
 }
+.keyboardVideo {
+  overflow: hidden;
+}
 .section .title {
   background: #cccccc;
 }
