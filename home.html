@@ -16,13 +16,16 @@
       }); 
     </script> 
   </head>
+<!--     BODY     -->
 <body>
+  <!--     HEADER     -->
   <div id="header"></div>
+  <!--     WELCOME TEXT     -->
   <div class="welcomeText">
     <b>Welcome,<br>
     I am Sam Christensen and this is my portfolio.</b>
   </div>
-    <!-- slideshow-->
+  <!--     SLIDES     -->
   <div class="slideContainer">
     <div id="slideshow" data-component="slideshow">
       <div role="list">
@@ -46,3 +49,20 @@
   </div>
 </body>
 </html>
+<!--     SLIDES SCRIPT     -->
+<script>
+  var slideshows = document.querySelectorAll('[data-component="slideshow"]');
+    slideshows.forEach(initSlideShow);
+    
+  function initSlideShow(slideshow) {    
+    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
+    var index = 0, time = 5000;
+    slides[index].classList.add('active');
+    setInterval( () => {
+      slides[index].classList.remove('active');
+      index++;
+      if (index === slides.length) index = 0;
+        slides[index].classList.add('active');
+    }, time);
+  }
+</script>
