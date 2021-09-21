@@ -137,7 +137,7 @@ body {
 .banner {
   object-fit: contain   !important;
   position:absolute     !important;
-  top: 10%               !important;
+  top: 15%               !important;
 }
 .section .title {
   background: #cccccc;
