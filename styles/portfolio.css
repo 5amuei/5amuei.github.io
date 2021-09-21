@@ -136,7 +136,7 @@ body {
 }
 .banner0 {
   object-fit: contain   !important;
-  position:absolute     !important;
+  position: relative    !important;
   top: 0%               !important;
   z-index: 10           !important;
 }
