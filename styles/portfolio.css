@@ -149,7 +149,7 @@ body {
 .banner2 {
   object-fit: contain   !important;
   position:absolute     !important;
-  top: 17%              !important;
+  top: 16%              !important;
   z-index: 50           !important;
 }
 .section .title {
