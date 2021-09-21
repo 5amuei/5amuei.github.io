@@ -1,258 +1,136 @@
 <!DOCTYPE html>
-<html>
-<title>Sam Christensen | Resume</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://kit.fontawesome.com/4600248190.js" crossorigin="anonymous"></script>
-<style>
-    h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+<html lang="en">
+  <!--     HEAD     -->
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sam Christensen | Resume</title>
 
-    body   { z-index:1;background-color: #cccccc;}
-    footer { z-index:1;}
+    <!--     SCRIPTS     -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/scripts/index.js"></script>
+    <script>  
+      $(function(){ 
+        $("#header").load("pageHeader.html");  
+      }); 
+    </script> 
+  </head>
+<!--     BODY     -->
 
-    header {
-      position:fixed;
-      z-index:104;
-      background-color: #2e2e2e;
-      min-width:100%;
-      height:4vh;
-      z-index:3;
-      color:#fff;
-    }
-
-    .bannerTop {
-        position: absolute;
-        z-index: 103;
-        left:0px;
-        top:5vh;
-    }
-
-    .bannerBottom {
-        position: absolute;
-        z-index: 101;
-        left:0px;
-        top:5vh;
-    }
-
-    .videoContainer {
-        position: fixed;
-        z-index: 102;
-        left: 0px;
-        top: 29vh;
-        height:60vh;
-    }
-
-    .textContainer {
-        position: absolute;
-        text-align: center;
-        z-index: 1;
-        width: 100vw;
-        font-size:18px;
-        top: 15vh;
-        overflow:hidden;
-    }
-
-    .button {
-        margin-top: 3%;
-        margin-left: -5%;
-        width:25vw;
-        border: none;
-        border-radius: .25em;
-        color: white;
-        padding: 16px 16px;
-        text-align: right;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        transition-duration: 0.4s;
-        cursor: pointer;
-    }
-    .button1 {background-color: #d72323;color: white;}
-    .button1:hover {background-color: #d76464;color: white;}
-    .button1:active {background-color:black;color: white;}
-    p { text-align: left; width: 80vw; margin-left:10vw; z-index: 1000;}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-</style>
 <header>
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <a href="/home.html" class="w3-bar-item w3-button w3-wide">SAM CHRISTENSEN</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="/home.html" class="w3-bar-item w3-button">HOME</a>
-      <a href="/portfolio.html" class="w3-bar-item w3-button"></i> PORTFOLIO</a>
-      <a href="/resume.html" class="w3-bar-item w3-button"></i> RESUME</a>
-      <a href="/contact.html" class="w3-bar-item w3-button"></i> CONTACT</a>
-      
+  <a href="https://github.com/5amuei/5amuei.github.io/raw/master/assets/documents/Sam-Christensen-Resume.pdf" download="Sam-Christensen-Resume.pdf">
+    <div>
+        <button class="button button1" style="top:15vh;">
+            <i class="far fa-file-pdf" style="color:white; size:16px;"></i>
+            <b>Download Resume PDF</b>
+        </button>
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:1000;" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="/home.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-  <a href="/portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
-  <a href="/resume.html" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
-  <a href="/contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-</nav>
-
-
-<a href="https://github.com/5amuei/5amuei.github.io/raw/master/assets/documents/Sam-Christensen-Resume.pdf" download="Sam-Christensen-Resume.pdf">
-  <div>
-      <button class="button button1" style="top:15vh;">
-          <i class="far fa-file-pdf" style="color:white; size:16px;"></i>
-          <b>Download Resume PDF</b>
-      </button>
-  </div>
-</a>
-
+  </a>
 </header>
-<body>
-<!--This links to your pdf resume-->
 
-<div class="textContainer">
-  
-  <div style="text-align: center; margin-bottom:5%;">
-    <h1><b>Sam Christensen</b></h1>
-    <h2>Samuel.David.Christensen@Gmail.com</h2>
+<body>
+  <div class="textContainer">
+    <div style="text-align: center; margin-bottom:5%;">
+      <h1><b>Sam Christensen</b></h1>
+      <h2>Samuel.David.Christensen@Gmail.com</h2>
+    </div>
   </div>
 
-<!--Skills table-->
-<table style="width: 90vw;text-align: center;">
-  <style>th {text-align: center}</style>
-  <style>td {text-align: center;border: none;}</style>
+  <!--Skills table-->
+  <table style="width: 90vw;text-align: center;">
+    <style>th {text-align: center}</style>
+    <style>td {text-align: center;border: none;}</style>
   </table>
 
-<div>
-<!--Experience-->
-<h2 style="text-align: center; margin-top:5%; margin-bottom:5%;"><b>Experience</b></h2>
+  <div>
+    <!--Experience-->
+    <h2 style="text-align: center; margin-top:5%; margin-bottom:5%;"><b>Experience</b></h2>
     <!--Tesla II-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
       <th style="text-align: left; border:none;">Tesla - Closures Engineering Intern</th><th style="text-align: right; border:none;">Fremont, California Jul 2021 - Present</th>
-  </table>
-      <p>Collaborated with world class vehicle engineering teams and key suppliers to develop Tesla’s unrivaled vehicle line</p>
-      <p>Supported manufacturing efforts through analytical driven design optimization to achieve the highest levels of craftsmanship</p>
+    </table>
+    <p>Collaborated with world class vehicle engineering teams and key suppliers to develop Tesla’s unrivaled vehicle line</p>
+    <p>Supported manufacturing efforts through analytical driven design optimization to achieve the highest levels of craftsmanship</p>
 
     <!--Lyons Motor Car-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
-        <th style="text-align: left; border:none;">Lyons Motor Car - Mechanical Engineer</th><th style="text-align: right; border:none;">New York, New York Sep 2020 - Jul 2021</th>
+      <th style="text-align: left; border:none;">Lyons Motor Car - Mechanical Engineer</th><th style="text-align: right; border:none;">New York, New York Sep 2020 - Jul 2021</th>
     </table>
-        <p>Contributed remotely to a cross functional team responsible for the fit and finish of the premier hypercar, the Streamliner Super Sport</p>
-        <p>Developed 20% of vehicle part concepts into functional, manufacturable parts with acceptable tolerances</p>
+    <p>Contributed remotely to a cross functional team responsible for the fit and finish of the premier hypercar, the Streamliner Super Sport</p>
+    <p>Developed 20% of vehicle part concepts into functional, manufacturable parts with acceptable tolerances</p>
 
     <!--Tesla I-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
-        <th style="text-align: left; border:none;">Tesla - Production Control Equipment Engineering Intern</th><th style="text-align: right; border:none;">Fremont, California Jan 2019 – Jan 2020</th>
+      <th style="text-align: left; border:none;">Tesla - Production Control Equipment Engineering Intern</th><th style="text-align: right; border:none;">Fremont, California Jan 2019 – Jan 2020</th>
     </table>
-        <p>Engaged with a diverse team of engineers, data analysts, and technicians</p>
-        <p>Ensured operation of automotive manufacturing equipment to reduce cost while increasing unit production and improving safe working conditions</p>
-        <p>Designed and installed improvements or established specifications and procured vendor provided solutions for production equipment</p>
-        <p>Projects led or assisted reduced weekly production downtime by 4 hours and eliminated an annual average of 5 safety incidents saving Tesla $6.8 million yearly</p>
+    <p>Engaged with a diverse team of engineers, data analysts, and technicians</p>
+    <p>Ensured operation of automotive manufacturing equipment to reduce cost while increasing unit production and improving safe working conditions</p>
+    <p>Designed and installed improvements or established specifications and procured vendor provided solutions for production equipment</p>
+    <p>Projects led or assisted reduced weekly production downtime by 4 hours and eliminated an annual average of 5 safety incidents saving Tesla $6.8 million yearly</p>
 
     <!--Texas Tech-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
-        <th style="text-align: left; border:none;">Texas Tech University – Machine Shop Student Assistant</th><th style="text-align: right; border:none;">Lubbock, Texas Jun 2018 – Dec 2018</th>
+      <th style="text-align: left; border:none;">Texas Tech University – Machine Shop Student Assistant</th><th style="text-align: right; border:none;">Lubbock, Texas Jun 2018 – Dec 2018</th>
     </table>
-        <p>Assisted faculty with the fabrication of research equipment and supervision of students producing design projects facilitating $10 million of research and the completion of 24 student designs with no safety incidents</p>
+    <p>Assisted faculty with the fabrication of research equipment and supervision of students producing design projects facilitating $10 million of research and the completion of 24 student designs with no safety incidents</p>
 
     <!--Mazda-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
-        <th style="text-align: left; border:none;">Classic Mazda of Denton – Master Automotive Repair Technician</th><th style="text-align: right; border:none;">Denton, Texas Nov 2010 – May 2014</th>
+      <th style="text-align: left; border:none;">Classic Mazda of Denton – Master Automotive Repair Technician</th><th style="text-align: right; border:none;">Denton, Texas Nov 2010 – May 2014</th>
     </table>
-        <p>Provided highest quality services and OEM new model support establishing a reputation for reliability leading to the highest manufacturer customer service rating in the region</p>
-</div>
+    <p>Provided highest quality services and OEM new model support establishing a reputation for reliability leading to the highest manufacturer customer service rating in the region</p>
+  </div>
 
-<div>
-<!--Education-->
-<h2 style="text-align: center; margin-top:5%; margin-bottom:5%;"><b>Education</b></h2>
+  <div>
+    <!--Education-->
+    <h2 style="text-align: center; margin-top:5%; margin-bottom:5%;"><b>Education</b></h2>
     <!--Masters-->
     <table style="width: 60vw; margin-left: 20vw; margin-right: 20vw; margin-bottom: 5%">
-        <style>th {border: none;}</style>
-        <style>td {border: none;}</style>
-            <tr><th style="text-align: left;">Texas Tech University</th><th style="text-align: right;">Lubbock, Texas Aug 2020 - Present</th></tr>
-            <tr><td style="text-align: left;">Master of Science in Manufacturing Engineering</td><td style="text-align: right;">GPA 3.625</td></tr>
+      <style>th {border: none;}</style>
+      <style>td {border: none;}</style>
+      <tr><th style="text-align: left;">Texas Tech University</th><th style="text-align: right;">Lubbock, Texas Aug 2020 - Present</th></tr>
+      <tr><td style="text-align: left;">Master of Science in Manufacturing Engineering</td><td style="text-align: right;">GPA 3.625</td></tr>
     </table>
     <!--Bachelors-->
     <table style="width: 60vw; margin-left: 20vw; margin-right: 20vw; margin-bottom: 5%">
-        <style>th {border: none;}</style>
-        <style>td {border: none;}</style>
-            <tr><th style="text-align: left;">Texas Tech University</th><th style="text-align: right;">Lubbock, Texas Sep 2013 - May 2020</th></tr>
-            <tr><td style="text-align: left;">Bachelor of Science in Mechanical Engineering, Minor in Mathematics</td><td style="text-align: right;">GPA 3.6</td></tr>
+      <style>th {border: none;}</style>
+      <style>td {border: none;}</style>
+      <tr><th style="text-align: left;">Texas Tech University</th><th style="text-align: right;">Lubbock, Texas Sep 2013 - May 2020</th></tr>
+      <tr><td style="text-align: left;">Bachelor of Science in Mechanical Engineering, Minor in Mathematics</td><td style="text-align: right;">GPA 3.6</td></tr>
     </table>
     <!--Lincoln College of Technology-->
     <table style="width: 60vw; margin-left: 20vw; margin-right: 20vw; margin-bottom: 5%">
-        <style>th {border: none;}</style>
-        <style>td {border: none;}</style>
-            <tr><th style="text-align: left;">Lincoln College of Technology</th><th style="text-align: right;">Grand Prairie, Texas Aug 2009 – Sep 2010</th></tr>
-            <tr><td style="text-align: left;">Automotive Technology Certificate</td><td style="text-align: right;"></td></tr>
+      <style>th {border: none;}</style>
+      <style>td {border: none;}</style>
+      <tr><th style="text-align: left;">Lincoln College of Technology</th><th style="text-align: right;">Grand Prairie, Texas Aug 2009 – Sep 2010</th></tr>
+      <tr><td style="text-align: left;">Automotive Technology Certificate</td><td style="text-align: right;"></td></tr>
     </table>
-</div>
+  </div>
     
-<div style="margin-bottom:5%;">
-<!--Academic Experience-->
-<h2 style="text-align: center; margin-top:5%; margin-bottom:5%;"><b>Academic Experience</b></h2>
+  <div style="margin-bottom:5%;">
+    <!--Academic Experience-->
+    <h2 style="text-align: center; margin-top:5%; margin-bottom:5%;"><b>Academic Experience</b></h2>
     <!--TTU FSAE President-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
-        <th style="text-align: left; border:none;">Texas Tech University Formula SAE – President</th><th style="text-align: right; border:none;">Lubbock, Texas Sep 2017 – Aug 2019</th>
+      <th style="text-align: left; border:none;">Texas Tech University Formula SAE – President</th><th style="text-align: right; border:none;">Lubbock, Texas Sep 2017 – Aug 2019</th>
     </table>
-        <p>Set design goals, timelines, and team objectives which led to an eight-place improvement in standing</p>
-        <p>Managed and mentored a team of six design leads and fifty members</p>
-        <p>Individually handled all administrational tasks including leading meetings, making purchases, and acting as the point of contact for university faculty and sponsors</p>
-        <p>Obtained sponsorships worth $80,000+ to fund fabrication of the race car</p>
-        <p>Organized outreach and sponsorship events to foster positive relationships with the community</p>
-
+    <p>Set design goals, timelines, and team objectives which led to an eight-place improvement in standing</p>
+    <p>Managed and mentored a team of six design leads and fifty members</p>
+    <p>Individually handled all administrational tasks including leading meetings, making purchases, and acting as the point of contact for university faculty and sponsors</p>
+    <p>Obtained sponsorships worth $80,000+ to fund fabrication of the race car</p>
+    <p>Organized outreach and sponsorship events to foster positive relationships with the community</p>
     <!--TTU FSAE Aerodynamics-->
     <table style="text-align: center; width:90vw; margin-left: 5vw; margin-bottom: 0%;">
-        <th style="text-align: left; border:none;">Texas Tech University Formula SAE – Aerodynamics Design Lead</th><th style="text-align: right; border:none;">Lubbock, Texas Sep 2016 – Aug 2018</th>
+      <th style="text-align: left; border:none;">Texas Tech University Formula SAE – Aerodynamics Design Lead</th><th style="text-align: right; border:none;">Lubbock, Texas Sep 2016 – Aug 2018</th>
     </table>   
-        <p>Produced aerodynamic design improvements and implemented features resulting in 186-pound downforce increase to improve driver confidence of vehicle handling characteristics</p>
-        <p>Designed and analyzed body panels, air foils, and supporting composite structures in SOLIDWORKS with integrated Computational Fluid Dynamics (CFD) software</p>
-        <p>Developed and fabricated male and female molds and tooling for composite part fabrication to produce aerodynamic components on site at Bell Helicopter</p>
-</div>
-  
+    <p>Produced aerodynamic design improvements and implemented features resulting in 186-pound downforce increase to improve driver confidence of vehicle handling characteristics</p>
+    <p>Designed and analyzed body panels, air foils, and supporting composite structures in SOLIDWORKS with integrated Computational Fluid Dynamics (CFD) software</p>
+    <p>Developed and fabricated male and female molds and tooling for composite part fabrication to produce aerodynamic components on site at Bell Helicopter</p>
   </div>
-
-
-<!-- Footer -->
+</body>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
-
 let skills = [
   { Applications: "CATIA - SOLIDWORKS",                      Certifications: "2018 Infiniti Engineering Academy USA Finalist",                   Fabrication: "Additive Manufacturing" },
   { Applications: "Autodesk Inventor - AutodeskAutoCAD",     Certifications: "Bell Helicopter Composite Production Training",                    Fabrication: "Mill & Lathe" },
@@ -286,8 +164,5 @@ let table = document.querySelector("table");
 let data = Object.keys(skills[0]);
 generateTableHead(table, data);
 generateTable(table, skills);
-
 </script>
-
-</body>
 </html>
