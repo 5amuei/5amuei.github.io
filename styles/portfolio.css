@@ -16,8 +16,8 @@ body {
   z-index:5000                    !important;
 }
 #legoLoaderWindow {
-  width: 100%                     !important;
-  height: 100%                    !important;
+  width: 100vw                     !important;
+  height: 100vh                    !important;
 }
 .header,
 .footer {

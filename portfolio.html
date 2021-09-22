@@ -12,11 +12,11 @@
    <body>
       <!--     HEADER INCLUDES     -->
       <div id="header"></div>
-      <div class="header"><i class="fa fa-angle-down animated bounce"></i></div>
       <!--     LOAD SCREEN     -->
       <div id="legoContainer">
          <div id="legoLoaderWindow"></div>
       </div>
+      <div class="header"><i class="fa fa-angle-down animated bounce"></i></div>
       <!--     SECTIONS     -->
                         <!--     THIS IS WHERE YOU ORDER A SECTION, BE SURE TO ADD IT IN THE SCRIPT OR IT WILL NOT LOAD     -->
       <div class="animate" id="tesla"></div>
@@ -54,9 +54,10 @@
             document.onreadystatechange = function() {
                if (document.readyState !== "complete") {
                document.querySelector("body").style.visibility = "hidden";
+               document.querySelector("#header").style.visibility = "visible";
                document.querySelector("#legoContainer").style.visibility = "visible";
                } else {
-               document.querySelector("#footer").style.display = "none";
+               document.querySelector("#legoContainer").style.display = "none";
                document.querySelector("body").style.visibility = "visible";
                }
             };
