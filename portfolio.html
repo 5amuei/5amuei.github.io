@@ -12,7 +12,8 @@
       <script src="/scripts/portfolio.js"></script>
       <script>  
          $(function(){ 
-            $("#header").load("pageHeader.html");  
+            $("#header").load("pageHeader.html"); 
+            $("#legoloader").load("legoLoader.html"); 
             $("#footer").load("footer.html");
             $("#tesla").load("portfolioSectionTesla.html");
             $("#lyons").load("portfolioSectionLyons.html");
@@ -27,6 +28,7 @@
    <body>
       <!--     HEADER INCLUDES     -->
       <div id="header"></div>
+      <div id="legoLoader"></div>
       <div class="header"><i class="fa fa-angle-down animated bounce"></i></div>
 
       <!--     SECTIONS     -->
@@ -39,5 +41,17 @@
       <!--     FOOTER     -->
       <div class="footer"><i class="fa fa-angle-up animated bounce"></i></div>
 
+
+      <script>
+         document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+            document.querySelector("body").style.visibility = "hidden";
+            document.querySelector("#legoLoader").style.visibility = "visible";
+            } else {
+            document.querySelector("#legoLoader").style.display = "none";
+            document.querySelector("body").style.visibility = "visible";
+            }
+         };
+      </script>
    </body>
 </html>

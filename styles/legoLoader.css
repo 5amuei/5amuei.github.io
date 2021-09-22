@@ -1,0 +1,14 @@
+.legoContainer {
+    background-color: #E9E9E9;
+    overflow: hidden;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#legoLoaderWindow {
+    width: 100%;
+    height: 100%;
+}
