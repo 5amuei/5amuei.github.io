@@ -6,70 +6,13 @@
       <link rel="stylesheet" href="/styles/portfolio.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Sam Christensen | Portfolio</title>
-         <!--     SCRIPTS     -->
-      <!--     IMPORT SCRIPTS     -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.0/lottie.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+      <!--     SCRIPTS     -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
       <script src="/scripts/portfolio.js"></script>
-   </head>
-
-   <!--     BODY     -->
-   <body>
-      <!--     HEADER INCLUDES     -->
-      <div id="header"></div>
-      <!--     LOAD SCREEN     -->
-      <!--<div id="legoContainer">
-         <div style="top:10%;left:10%;">Loading...</div>
-         <div id="legoLoaderWindow"></div>
-      </div>-->
-      <div class="header"><i class="fa fa-angle-down animated bounce"></i></div>
-      <!--     SECTIONS     -->
-                        <!--     THIS IS WHERE YOU ORDER A SECTION, BE SURE TO ADD IT IN THE SCRIPT OR IT WILL NOT LOAD     -->
-      <div id="tesla"></div>
-      <div id="lyons"></div>
-      <div id="fsae"></div>
-      <div id="keyboard"></div>
-      <div id="infiniti"></div>
-
-      <!--     FOOTER     -->
-      <div class="footer"><i class="fa fa-angle-up animated bounce"></i></div>
-   </body>
-
-   <!--     SCRIPTS     -->
-      <!--     legoLoader SCRIPTS     -->
-         <!--     BLOCK ANIMATION SCRIPTS     -->
-         <script>
-            var animData = {
-               wrapper: document.querySelector('#legoLoaderWindow'),
-               animType: 'svg',
-               loop: true,
-               prerender: true,
-               autoplay: true,
-               path: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/LEGO_builder_nudge.json'
-               };
-            var anim = bodymovin.loadAnimation(animData);
-            anim.setSpeed(1.52);
-            //ScrubBodymovinTimeline(anim)
-         </script>
-         <!--     TOGGLE DISPLAY SCRIPTS     -|->
-         <script>
-            document.onreadystatechange = function() {
-               if (document.readyState !== "complete") {
-               document.querySelector("body").style.visibility = "hidden";
-               document.querySelector("#header").style.visibility = "visible";
-               document.querySelector("#legoContainer").style.visibility = "visible";
-               } else {
-               document.querySelector("#legoContainer").style.display = "none";
-               document.querySelector("body").style.visibility = "visible";
-               }
-            };
-         </script>
-         <!-|-     END legoLoader SCRIPTS     -->
-      <!--     LOAD SECTIONS SCRIPTS     -->
-                        <!--     THIS IS WHERE YOU ADD A SECTION OR IT WILL NOT LOAD     -->
       <script>  
          $(function(){ 
-            $("#header").load("pageHeader.html");
+            $("#header").load("pageHeader.html");  
             $("#footer").load("footer.html");
             $("#tesla").load("portfolioSectionTesla.html");
             $("#lyons").load("portfolioSectionLyons.html");
@@ -77,6 +20,24 @@
             $("#keyboard").load("portfolioSectionKeyboard.html");
             $("#infiniti").load("portfolioSectionInfiniti.html");
          }); 
-      </script>
-   <!--     END SCRIPTS     -->
+      </script> 
+   </head>
+
+   <!--     BODY     -->
+   <body>
+      <!--     HEADER INCLUDES     -->
+      <div id="header"></div>
+      <div class="header"><i class="fa fa-angle-down animated bounce"></i></div>
+
+      <!--     SECTIONS     -->
+      <div class="animate" id="tesla"></div>
+      <div id="lyons"></div>
+      <div id="fsae"></div>
+      <div id="keyboard"></div>
+      <div id="infiniti"></div>
+
+      <!--     FOOTER     -->
+      <div class="footer"><i class="fa fa-angle-up animated bounce"></i></div>
+
+   </body>
 </html>

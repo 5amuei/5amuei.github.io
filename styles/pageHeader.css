@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
 
-html {
+header {
   position:fixed;
   z-index:100;
   background-color: #2e2e2e;
