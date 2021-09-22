@@ -14,11 +14,8 @@
       <div id="header"></div>
       <div class="header"><i class="fa fa-angle-down animated bounce"></i></div>
       <!--     LOAD SCREEN     -->
-      <div id="legoLoader">
-         <link rel="stylesheet" href="/styles/legoLoader.css">
-         <div id="legoContainer">
-            <div id="legoLoaderWindow"></div>
-        </div>
+      <div id="legoContainer">
+         <div id="legoLoaderWindow"></div>
       </div>
       <!--     SECTIONS     -->
       <div class="animate" id="tesla"></div>
@@ -30,7 +27,7 @@
       <!--     FOOTER     -->
       <div class="footer"><i class="fa fa-angle-up animated bounce"></i></div>
    </body>
-   
+
          <!--     SCRIPTS     -->
          <!--     legoLoader SCRIPTS     -->
             <!--     TOGGLE DISPLAY SCRIPTS     -->
@@ -38,7 +35,7 @@
                document.onreadystatechange = function() {
                   if (document.readyState !== "complete") {
                   document.querySelector("body").style.visibility = "hidden";
-                  document.querySelector("#legoLoader").style.visibility = "visible";
+                  document.querySelector("#legoContainer").style.visibility = "visible";
                   } else {
                   document.querySelector("#footer").style.display = "none";
                   document.querySelector("body").style.visibility = "visible";

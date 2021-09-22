@@ -4,7 +4,20 @@ body {
   background-color: #2e2e2e;
   z-index:0;
 }
-
+#legoContainer {
+  background-color: #E9E9E9     !important;
+  overflow: hidden                !important;
+  text-align: center              !important;
+  height: 100%                    !important;
+  width: 100%                     !important;
+  margin: 0                       !important;
+  padding: 0                      !important;
+  z-index:5000                    !important;
+}
+#legoLoaderWindow {
+  width: 100%                     !important;
+  height: 100%                    !important;
+}
 .header,
 .footer {
   background: #2e2e2e;
