@@ -8,7 +8,7 @@ $(document).ready(function(){
       if ($(window).width() >= $sm) {
          $('.left,.right,.section').css('height', $imgH);
       } else {
-         $('.left,.right,.section').css('height', 'auto');
+         $('.left,.right,.section').css('height',  $imgH);//'auto');
       }
    }
 
