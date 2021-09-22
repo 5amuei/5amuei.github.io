@@ -30,18 +30,6 @@
 
          <!--     SCRIPTS     -->
          <!--     legoLoader SCRIPTS     -->
-            <!--     TOGGLE DISPLAY SCRIPTS     -->
-            <script>
-               document.onreadystatechange = function() {
-                  if (document.readyState !== "complete") {
-                  document.querySelector("body").style.visibility = "hidden";
-                  document.querySelector("#legoContainer").style.visibility = "visible";
-                  } else {
-                  document.querySelector("#footer").style.display = "none";
-                  document.querySelector("body").style.visibility = "visible";
-                  }
-               };
-            </script>
                   <!--     BLOCK ANIMATION SCRIPTS     -->
             <script>
                var animData = {
@@ -61,6 +49,18 @@
             <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/4.8.0/bodymovin.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
             <script src="/scripts/portfolio.js"></script>
+            <!--     TOGGLE DISPLAY SCRIPTS     -->
+            <script>
+               document.onreadystatechange = function() {
+                  if (document.readyState !== "complete") {
+                  document.querySelector("body").style.visibility = "hidden";
+                  document.querySelector("#legoContainer").style.visibility = "visible";
+                  } else {
+                  document.querySelector("#footer").style.display = "none";
+                  document.querySelector("body").style.visibility = "visible";
+                  }
+               };
+            </script>
             <!--     LOAD SECTIONS SCRIPTS     -->
             <script>  
                $(function(){ 
