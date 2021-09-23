@@ -155,6 +155,7 @@ body {
 .lyonsText {
   height: 35%;
   width: 80%;
+  left: 10%;
 }
 .scrollingText {
   overflow-y: hidden;
