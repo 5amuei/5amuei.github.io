@@ -152,6 +152,10 @@ body {
   top: 16%              !important;
   z-index: 50           !important;
 }
+.scrollingTextLyons {
+  overflow-y: scroll;
+  height: 50%;
+}
 .section .title {
   background: #cccccc;
 }
