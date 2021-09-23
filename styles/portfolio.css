@@ -246,9 +246,11 @@ body {
   padding-top: 75%;
   height: 0px;
   position: relative;
+  line-height: 0;
 }
 
 .video {
+  display: block;
   width: 100%   !important;
   height: 100%  !important;
   position: absolute;
