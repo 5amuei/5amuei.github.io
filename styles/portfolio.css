@@ -241,7 +241,7 @@ body {
   z-index:10;
 }
 .videoContainer {
-  bottom: 0;
+  margin-bottom: 0;
   width: 100%;
   padding-top: 75%;
   height: 0px;
@@ -254,8 +254,8 @@ body {
   width: 100%   !important;
   height: 100%  !important;
   position: absolute;
-  bottom: 0;
-  left: 0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
 @-webkit-keyframes bounce {
