@@ -152,11 +152,17 @@ body {
   top: 16%              !important;
   z-index: 50           !important;
 }
-.scrollingTextLyons {
-  overflow-y: hidden;
+.lyonsText {
   height: 35%;
   width: 80%;
 }
+.scrollingText {
+  overflow-y: hidden;
+}
+.scrollingText::-webkit-scrollbar {
+  display: none;
+}
+
 .section .title {
   background: #cccccc;
 }
