@@ -58,6 +58,7 @@ body {
   width: 100%;
   display: block;
   color: #000000;
+  background: #cccccc;
   box-sizing: border-box;
   left: 0;
   padding: 30px;
@@ -221,7 +222,6 @@ body {
   }
 }
 .section .middle {
-  background: #2e2e2e;
   z-index: 30;
   padding: 0;
   width: 33.333333333%;
