@@ -150,7 +150,7 @@ body {
 .banner2 {
   object-fit: contain   !important;
   position:absolute     !important;
-  top: 16%              !important;
+  top: 20%              !important;
   z-index: 50           !important;
 }
 .lyonsText {
@@ -241,7 +241,7 @@ body {
   z-index:10;
 }
 .videoContainer {
-  margin-top: 17%;
+  margin-top: 18%;
   width: 100%;
   padding-top: 56.5%;
   height: 0px;
