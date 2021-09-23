@@ -154,7 +154,7 @@ body {
 }
 .scrollingTextLyons {
   overflow-y: scroll;
-  height: 50%;
+  height: 35%;
 }
 .section .title {
   background: #cccccc;
