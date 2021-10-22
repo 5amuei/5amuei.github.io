@@ -1,68 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--     HEAD     -->
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/styles/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sam Christensen | Home</title>
 
-    <!--     SCRIPTS     -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="/scripts/index.js"></script>
-    <script>  
-      $(function(){ 
-        $("#header").load("pageHeader.html");  
-      }); 
-    </script> 
-  </head>
-<!--     BODY     -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sam Christensen | Engineering Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/360CarStyle.css">
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/jquery-2.1.4.js"></script>
+    <script src="./scripts/360CarMain.js"></script>
+</head>
+
+<header>
+
+</header>
+
 <body>
-  <!--     HEADER     -->
-  <div id="header"></div>
-  <!--     WELCOME TEXT     -->
-  <div class="welcomeText">
-    <b>Welcome,<br>
-    I am Sam Christensen and this is my portfolio.</b>
-  </div>
-  <!--     SLIDES     -->
-  <div class="slideContainer">
-    <div id="slideshow" data-component="slideshow">
-      <div role="list">
-        <div class="slideContainer">
-          <div class="slide background-image" style="background-image: url('/assets/images/index/slide1.jpg');">
-            <img src="/assets/images/index/slide1.jpg" style="opacity: 0;" alt="">
-          </div>
+    <!-- START SECTION -->
+    <div id="hex1Img" style="display: none;">
+        <div class="polygonMiddleUpperHalf">
+            <img src="./assets/design/starret.jpg" class="polygonMiddleUpperHalfMedia">
         </div>
-        <div class="slideContainer">
-          <div class="slide background-image" style="background-image: url('/assets/images/index/slide2.jpg');">
-            <img src="/assets/images/index/slide2.jpg"  style="opacity: 0;" alt="">
-          </div>
-        </div>
-        <div class="slideContainer">
-          <div class="slide background-image"  style="background-image: url('/assets/images/index/slide3.jpg');">
-            <img src="/assets/images/index/slide3.jpg"  style="opacity: 0;" alt="">
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+    <div id="hex1">
+        <div class="button" role="button" id="hex1Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex1ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex1ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div class="imageContainer" id="hex2Img" style="display: none;">
+        <div class="FEALeft">
+            <img src="./assets/sims/FEA.PNG" class="FEALeftMedia">
+        </div>
+        <div class="CFDRight">
+            <video class="CFDRightMedia" autoplay loop muted>
+                <source src="./assets/sims/CFD.mp4" type="video/mp4">
+        </div>
+    </div>
+    <div id="hex2">
+        <div class="button" role="button" id="hex2Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex2ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex2ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div id="hex3Img" style="display: none;">
+        <div class="polygonMiddleUpperHalf">
+            <img src="./assets/design/starret.jpg" class="polygonMiddleUpperHalfMedia">
+        </div>
+        <div class="polygonMiddleLowerHalf">
+            <video class="polygonMiddleLowerMedia" autoplay loop muted>
+                <source src="./assets/design/metrologyVideo.mp4" type="video/mp4">
+        </div>
+        <div class="polygonRightLowerThird">
+            <img src="./assets/design/wingTest.png" class="polygonRightLowerThirdMedia">
+        </div>
+        <div class="polygonRightUpperThird">
+            <video class="polygonRightUpperThirdMedia" autoplay loop muted>
+                <source src="./assets/design/scratchEdited.mp4" type="video/mp4">
+        </div>
+        <div class="polygonLeftLowerThird">
+            <video class="polygonLeftLowerThirdMedia" autoplay loop muted>
+                <source src="./assets/design/eoat.mp4" type="video/mp4">
+        </div>
+        <div class="polygonLeftUpperThird">
+            <img src="./assets/design/hook.jpg" class="polygonLeftUpperThirdMedia">
+        </div>
+    </div>
+    <div id="hex3">
+        <div class="button" role="button" id="hex3Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex3ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex3ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div class="imageContainer" id="hex4Img" style="display: none;">
+        <div class="CADLeft">
+            <img src="./assets/CAD/bellCrank.jpg" class="CADLeftMedia">
+        </div>
+        <div class="CADrightTop">
+            <img src="./assets/CAD/dash.PNG" class="CADrightTopMedia">
+        </div>
+        <!-- 360Car Start -->
+        <div class="CAD360Car">
+            <div class="cd-product-viewer-wrapper" data-frame="16" data-friction="0.33">
+                <div class="product-viewer">
+                    <img src="./assets/CAD/img-loading.jpg" alt="Product Preview">
+                    <div class="product-sprite" data-image="./assets/CAD/img-sprite.png"></div>
+                </div>
+                <div class="cd-product-viewer-handle">
+                    <span class="fill"></span>
+                    <span class="handle">Handle</span>
+                </div>
+            </div>
+        </div>
+        <!-- 360Car End -->
+    </div>
+    <div id="hex4">
+        <div class="button" role="button" id="hex4Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex4ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex4ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div class="hexBackground" id="hex5Img" style="display: none;">
+        <div class="peekaboo">
+            <div class="leftHalfBanner">
+                <img src="./assets/infiniti/infinitiBanner1.png" class="leftHalfBannerImage">
+                <img src="./assets/infiniti/infinitiBanner2.png" class="leftHalfBannerImage" style="margin-top: 10%; z-index: 210;">
+            </div>
+            <div class="leftHalfVideoContainer">
+                <video class="leftHalfVideo" autoplay loop muted>
+                    <source src="./assets/infiniti/infEA2018US.mp4" type="video/mp4">
+            </div>
+            <div class="hiddenTextContainer iSeeYou">
+                <div class="leftHalfTextContainer">
+                    <div class="leftHalfTextBox">
+                        <img src="./assets/infiniti/infinitiLogo.png" class="hiddenTextImage">
+                        <h1 class="leftHalfText">2018 North America Top 10 Finalist</h1>
+                        <p class="leftHalfText">"Sam was a very personal young man, with a clear
+                        passion for mechanical engineering. I was impressed
+                        with his people skills and he scored well in the team
+                        events. I wish Sam good luck with his future career."
+                        </p>
+                        <h2 class="leftHalfText">Andy Todd</h2>
+                        <h3 class="leftHalfText">
+                            Director, Body & Exterior Engineering,
+                            Nissan Technical Centre Europe.
+                        </h3>
+                        <p class="leftHalfText">
+                        "Sam was a great sport with a fun attitude and isn’t
+                        afraid to speak up. He is able to think through issues and
+                        to focus on the task. I know that Sam will do well in the
+                        engineering world."
+                        </p>
+                        <h2 class="leftHalfText">Greg Ramsey</h2>
+                        <h3 class="leftHalfText">
+                             Senior Manager, SV/NSA, INFINITI
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fsaeSlideContainer">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide1.jpg" style="display:block;">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide2.jpg">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide3.png">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide4.JPG">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide5.jpg">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide6.jpg">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide7.jpg">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide8.JPG">
+            <img class="fsaeSlides" src="./assets/fsae/fsaeSlide9.JPG">
+            <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("fsaeSlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) { slideIndex = 1 }
+                    x[slideIndex - 1].style.display = "block";
+                    setTimeout(carousel, 3000);
+                }
+            </script>
+        </div>
+    </div>
+    <div id="hex5">
+        <div class="button" role="button" id="hex5Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex5ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex5ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div class="imageContainer" id="hex6Img" style="display: none;">
+        <img src="./hex6.JPG" class="hexBackground">
+    </div>
+    <div id="hex6">
+        <div class="button" role="button" id="hex6Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex6ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex6ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
+    <!-- START SECTION -->
+    <div class="imageContainer" id="hex7Img" style="display: none;">
+        <img src="./hex7.JPG" class="hexBackground">
+    </div>
+    <div id="hex7">
+        <div class="button" role="button" id="hex7Button" style="z-index:10;">
+            <div class="button">
+                <div class="hex" id="hex7ButtonBackgroundTop" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="hex" id="hex7ButtonBackgroundBottom" style="background:#2e2e2e">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END SECTION -->
 </body>
+
 </html>
-<!--     SLIDES SCRIPT     -->
-<script>
-  var slideshows = document.querySelectorAll('[data-component="slideshow"]');
-    slideshows.forEach(initSlideShow);
-    
-  function initSlideShow(slideshow) {    
-    var slides = document.querySelectorAll(`#${slideshow.id} [role="list"] .slide`);
-    var index = 0, time = 5000;
-    slides[index].classList.add('active');
-    setInterval( () => {
-      slides[index].classList.remove('active');
-      index++;
-      if (index === slides.length) index = 0;
-        slides[index].classList.add('active');
-    }, time);
-  }
-</script>
