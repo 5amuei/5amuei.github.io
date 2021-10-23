@@ -7,9 +7,11 @@
     <title>Sam Christensen | Engineering Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/360CarStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/script.js"></script>
     <script src="./scripts/jquery-2.1.4.js"></script>
     <script src="./scripts/360CarMain.js"></script>
+    <script src="https://kit.fontawesome.com/4600248190.js" crossorigin="anonymous"></script>
 </head>
 
 <header>
@@ -19,16 +21,62 @@
 <body>
     <!-- START SECTION -->
     <div id="hex1Img" style="display: none;">
-        <div class="polygonMiddleUpperHalf">
-            <img src="./assets/design/starret.jpg" class="polygonMiddleUpperHalfMedia">
+        <div class="profileMEcontainer">
+            <img src="./assets/about/professionalME.png" class="profileME">
         </div>
         <div>
-            <a href="https://github.com/5amuei/5amuei.github.io/raw/master/assets/documents/Sam-Christensen-Resume.pdf" download="Sam-Christensen-Resume.pdf">
-                <button class="buttonResumeDownload buttonResume" style="top:15vh;">
-                    <i class="far fa-file-pdf" style="color:white; size:16px;"></i>
+            <a href="https://github.com/5amuei/5amuei.github.io/raw/master/assets/about/Sam-Christensen-Resume.pdf" download="Sam-Christensen-Resume.pdf">
+                <button class="buttonAboutMe buttonAbout buttonResume">
+                    <i class="far fa-file-pdf"></i>
                     <b>Download Resume PDF</b>
                 </button>
             </a>
+
+            <button class="buttonAboutMe buttonAbout buttonPhone">
+                <i class="fas fa-mobile-alt"></i>
+                <input onclick="showPhone()" class="buttonPhoneHidden" type="button" id="phoneNumber" value="Phone"></input>
+            </button>
+
+            <a href="mailto:Samuel.David.christensen@gmail.com">
+                <div>
+                    <button class="buttonAboutMe buttonAbout buttonEmail">
+                          <i class="fas fa-envelope-open-text"></i>
+                          <b>Email</b>
+                      </button>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/samuel-christensen-a32a521b3/">
+                <div>
+                    <button class="buttonAboutMe buttonAbout buttonLinkedIn">
+                          <i class="fab fa-linkedin"></i>
+                          <b>LinkedIn</b>
+                      </button>
+                </div>
+            </a>
+
+            <a href="https://github.com/5amuei">
+                <div>
+                    <button class="buttonAboutMe buttonAbout buttonGitHub">
+                          <i class="fab fa-github-square"></i>
+                          <b>GitHub</b>
+                      </button>
+                </div>
+            </a>
+
+            <div class="resumeHalfTextBox">
+                <h2>Experience</h2>
+                <h3>Tesla, Vehicle Design</h3>
+                <p>Closures Engineering Intern</p>
+                <h3>Lyons Motor Car</h3>
+                <p>Mechanical Engineer</p>
+                <h3>Tesla, Manufacturing</h3>
+                <p>Production Control Equipment Engineering Intern</p>
+                <h3>Texas Tech University</h3>
+                <p>Machine Shop Student Assistant</p>
+                <h3>Classic Mazda of Denton</h3>
+                <p>Master Automotive Repair Technician</p>
+            </div>
         </div>
     </div>
     <div id="hex1">

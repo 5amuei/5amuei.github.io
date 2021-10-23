@@ -44,3 +44,9 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundTopString, 
         }, 950);
     }
 }
+
+function showPhone() {
+    var elem = document.getElementById("phoneNumber");
+    if (elem.value == "Phone") elem.value = "341-345-5516";
+    else elem.value = "Phone";
+}
