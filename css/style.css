@@ -5,8 +5,43 @@ body {
     font-family: 'Fjalla One', sans-serif;
 }
 
+.buttonResumeDownload {
+    margin-top: 3%;
+    margin-left: -5%;
+    width: 25vw;
+    border: none;
+    border-radius: .25em;
+    color: white;
+    padding: 16px 16px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
 
-/* Start of containers */
+.buttonResume {
+    background-color: #d72323;
+    color: white;
+}
+
+.buttonResume:hover {
+    background-color: #d76464;
+    color: white;
+}
+
+.buttonResume:active {
+    background-color: black;
+    color: white;
+}
+
+p {
+    text-align: left;
+    width: 80vw;
+    margin-left: 10vw;
+    z-index: 1000;
+}
 
 .imageContainer {
     overflow: hidden;
