@@ -44,9 +44,11 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundTopString, 
         }, 950);
     }
 }
+var myHTMLstring = '<i class="fas fa-mobile-alt"></i>'
 
 function showPhone() {
-    var elem = document.getElementById("phoneNumber");
-    if (elem.value == "Phone") elem.value = "341-345-5516";
-    else elem.value = "Phone";
+    if (document.getElementById("phoneNumber").innerText == " Phone") {
+        document.getElementById("phoneNumber").innerHTML = myHTMLstring;
+        document.getElementById("phoneNumber").innerHTML += " 341-345-5516";
+    }
 }

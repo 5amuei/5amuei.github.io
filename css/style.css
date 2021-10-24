@@ -7,7 +7,7 @@ body {
 
 .profileMEcontainer {
     position: absolute;
-    left: 15vw;
+    left: 14vw;
     top: 7.5vh;
     overflow: hidden;
     height: 92.5vh;
@@ -61,24 +61,11 @@ body {
 .buttonPhone {
     top: 7vh;
     margin-left: -5%;
+    font-weight: bold;
 }
 
 .fas .fab .far {
     font-size: 52px;
-    pointer-events: none;
-}
-
-.buttonPhoneHidden {
-    position: relative;
-    background: none;
-    border: none;
-    margin: 0;
-    padding: 0;
-    color: inherit;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    height: 100%;
 }
 
 .buttonEmail {
