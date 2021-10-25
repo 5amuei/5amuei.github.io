@@ -20,6 +20,15 @@ window.onload = function() {
     document.getElementById("hex7Button").addEventListener("click", function() {
         loadImg("hex7Img", "hex7Button", "hex7ButtonBackgroundTop", "hex7ButtonBackgroundBottom")
     })
+    document.getElementById("timeline0Sign").addEventListener("click", function() {
+        timeTravel("timeline0")
+    })
+    document.getElementById("timeline1Sign").addEventListener("click", function() {
+        timeTravel("timeline1")
+    })
+    document.getElementById("timeline2Sign").addEventListener("click", function() {
+        timeTravel("timeline2")
+    })
 }
 
 function loadImg(hexImageString, hexButtonString, hexButtonBackgroundTopString, hexButtonBackgroundBottomString) {
@@ -44,11 +53,34 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundTopString, 
         }, 950);
     }
 }
+
 var myHTMLstring = '<i class="fas fa-mobile-alt"></i>'
 
 function showPhone() {
     if (document.getElementById("phoneNumber").innerText == " Phone") {
         document.getElementById("phoneNumber").innerHTML = myHTMLstring;
         document.getElementById("phoneNumber").innerHTML += " 341-345-5516";
+    }
+}
+
+function timeTravel(timeZone) {
+    var signID = timeZone + 'Sign';
+    var truckPositionStart = window.getComputedStyle(document.getElementById('timeline0Sign')).right;
+    var truckPosition = window.getComputedStyle(document.getElementById(signID)).right;
+    var truckPositionNew = parseInt(truckPositionStart) - parseInt(truckPosition);
+    tPNString = "translate(" + truckPositionNew + "px)"
+    document.getElementById("timeTruck").style.transform = tPNString;
+
+    var timeToHide = document.getElementsByClassName("timelineShow");
+    var timeToShow = document.getElementsByClassName(timeZone);
+    var i;
+    for (i = 0; i < timeToHide.length; i++) {
+        timeToHide[i].classList.add("timelineHidden");
+        timeToHide[i].classList.remove("timelineShow");
+    }
+    var j;
+    for (j = 0; j < timeToShow.length; j++) {
+        timeToShow[j].classList.remove("timelineHidden");
+        timeToShow[j].classList.add("timelineShow");
     }
 }
