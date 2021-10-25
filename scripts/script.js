@@ -29,6 +29,24 @@ window.onload = function() {
     document.getElementById("timeline2Sign").addEventListener("click", function() {
         timeTravel("timeline2")
     })
+    document.getElementById("timeline3Sign").addEventListener("click", function() {
+        timeTravel("timeline3")
+    })
+    document.getElementById("timeline4Sign").addEventListener("click", function() {
+        timeTravel("timeline4")
+    })
+    document.getElementById("timeline5Sign").addEventListener("click", function() {
+        timeTravel("timeline5")
+    })
+    document.getElementById("timeline6Sign").addEventListener("click", function() {
+        timeTravel("timeline6")
+    })
+    document.getElementById("timeline7Sign").addEventListener("click", function() {
+        timeTravel("timeline7")
+    })
+    document.getElementById("timeline8Sign").addEventListener("click", function() {
+        timeTravel("timeline8")
+    })
 }
 
 function loadImg(hexImageString, hexButtonString, hexButtonBackgroundTopString, hexButtonBackgroundBottomString) {
