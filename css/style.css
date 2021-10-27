@@ -708,6 +708,7 @@ p.leftHalfText {
 
 .hex {
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: rotate(90deg);
     width: 10vw;
     height: 23vh;
