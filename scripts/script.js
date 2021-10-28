@@ -50,8 +50,10 @@ window.onload = function() {
 }
 
 function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
+    hexTextBackground = hexButtonString + "Text";
     if (document.getElementById(hexImageString).style.display == "none") {
         document.getElementById(hexButtonBackgroundString).style.backgroundColor = "white";
+        document.getElementById(hexTextBackground).style.backgroundColor = "#81d2f8ce";
         document.getElementById(hexImageString).classList.remove("fade-out");
         document.getElementById(hexImageString).style.zIndex = 100;
         document.getElementById(hexImageString).classList.add("fade-in");
@@ -63,6 +65,7 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
         document.getElementById(hexImageString).classList.add("fade-out");
         document.getElementById(hexButtonString).style.zIndex = 10;
         document.getElementById(hexButtonBackgroundString).style.backgroundColor = "#81d2f8ce";
+        document.getElementById(hexTextBackground).style.backgroundColor = "transparent";
         setTimeout(function() {
             document.getElementById(hexImageString).style.display = "none";
             document.getElementById(hexImageString).style.zIndex = 0;

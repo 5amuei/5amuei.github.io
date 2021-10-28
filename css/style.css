@@ -690,6 +690,26 @@ p.leftHalfText {
 
 /* Start of hex buttons */
 
+.hex p {
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 165%;
+    color: white;
+    z-index: inherit;
+    width: 110%;
+    top: 39%;
+    right: 30%;
+    transform: translate(50%, -50%) rotate(-90deg);
+}
+
+.hex:hover p {
+    transform: translate(50%, -50%) rotate(-90deg);
+    background-color: #81d2f8ce;
+    width: 110%;
+    pointer-events: none;
+}
+
 .hex img {
     position: absolute;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
