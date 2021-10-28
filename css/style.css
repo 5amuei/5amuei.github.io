@@ -690,7 +690,13 @@ p.leftHalfText {
 
 /* Start of hex buttons */
 
-.hex p {
+#hex1ButtonText,
+#hex2ButtonText,
+#hex3ButtonText,
+#hex4ButtonText,
+#hex5ButtonText,
+#hex6ButtonText,
+#hex7ButtonText {
     position: absolute;
     text-align: center;
     font-weight: bold;
@@ -703,7 +709,13 @@ p.leftHalfText {
     transform: translate(50%, -50%) rotate(-90deg);
 }
 
-.hex:hover p {
+.hex:hover #hex1ButtonText,
+.hex:hover #hex2ButtonText,
+.hex:hover #hex3ButtonText,
+.hex:hover #hex4ButtonText,
+.hex:hover #hex5ButtonText,
+.hex:hover #hex6ButtonText,
+.hex:hover #hex7ButtonText {
     transform: translate(50%, -50%) rotate(-90deg);
     background-color: #81d2f8ce;
     width: 110%;
