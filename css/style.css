@@ -84,16 +84,17 @@ body {
     text-align: left;
     font-size: 300%;
     color: #81d2f8ce;
+    margin-bottom: -5%;
 }
 
 .resumeHalfTextBox h3 {
     font-size: 200%;
     font-weight: normal;
-    margin-bottom: -0.854%;
+    margin-bottom: -5%;
 }
 
 .resumeHalfTextBox p {
-    font-size: 150%;
+    font-size: 125%;
     margin-left: 3%;
 }
 
