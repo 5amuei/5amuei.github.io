@@ -43,7 +43,7 @@ body {
     text-align: right;
     text-decoration: none;
     display: block;
-    font-size: 100%;
+    font-size: 120%;
     transition-duration: 0.4s;
     cursor: pointer;
     white-space: nowrap;
@@ -82,18 +82,18 @@ body {
 .resumeHalfTextBox h2 {
     margin-left: 5%;
     text-align: left;
-    font-size: 700%;
+    font-size: 300%;
     color: #81d2f8ce;
 }
 
 .resumeHalfTextBox h3 {
-    font-size: 600%;
+    font-size: 200%;
     font-weight: normal;
     margin-bottom: -0.854%;
 }
 
 .resumeHalfTextBox p {
-    font-size: 500%;
+    font-size: 150%;
     margin-left: 3%;
 }
 
