@@ -292,26 +292,26 @@ body {
 }
 
 h1.leftHalfText {
-    font-size: 1100%;
+    font-size: 300%;
     margin: 0;
     margin-bottom: 5%;
     font-weight: normal;
 }
 
 h2.leftHalfText {
-    font-size: 800%;
+    font-size: 200%;
     margin: 0;
 }
 
 h3.leftHalfText {
-    font-size: 600%;
+    font-size: 150%;
     margin-top: 0%;
     margin-bottom: 5%;
     font-weight: normal;
 }
 
 p.leftHalfText {
-    font-size: 600%;
+    font-size: 150%;
     margin: 3%;
     margin-top: 2%;
 }
