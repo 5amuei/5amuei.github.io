@@ -43,7 +43,7 @@ body {
     text-align: right;
     text-decoration: none;
     display: block;
-    font-size: 500%;
+    font-size: 100%;
     transition-duration: 0.4s;
     cursor: pointer;
     white-space: nowrap;
