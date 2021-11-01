@@ -553,13 +553,13 @@ p.leftHalfText {
 }
 
 .timelineTextContainer h2 {
-    font-size: 300%;
+    font-size: 3em;
     font-weight: bold;
     z-index: inherit;
 }
 
 .timelineTextContainer p {
-    font-size: 150%;
+    font-size: 1.5em;
     z-index: inherit;
 }
 
@@ -574,7 +574,7 @@ p.leftHalfText {
 .timelineLine {
     border-radius: 1vw;
     background-color: white;
-    top: 70%;
+    top: 70.125%;
     right: 5%;
     width: 90%;
     height: 1%;
@@ -587,7 +587,7 @@ p.leftHalfText {
     color: white;
     top: 66%;
     right: 92.5%;
-    font-size: 250%;
+    font-size: 2em;
     position: absolute;
     z-index: inherit;
     transition: 1s ease-in-out
@@ -598,7 +598,7 @@ p.leftHalfText {
     top: 2%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    font-size: 250%;
+    font-size: 2em;
     position: relative;
     cursor: pointer;
     z-index: inherit;
