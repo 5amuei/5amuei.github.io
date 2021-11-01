@@ -555,6 +555,7 @@ p.leftHalfText {
     text-align: center;
     z-index: inherit;
     background-color: #81d2f8ce;
+    overflow: hidden;
 }
 
 .timelineTextContainer h2 {
@@ -584,7 +585,6 @@ p.leftHalfText {
     width: 90%;
     height: 1%;
     position: absolute;
-    overflow: hidden;
     z-index: inherit;
 }
 
