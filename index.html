@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sam Christensen | Engineering Portfolio</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="data:;base64,=">
     <link rel="stylesheet" href="./css/360CarStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/script.js"></script>
@@ -371,3 +372,24 @@
 </body>
 
 </html>
+<script>
+    function scanSizes(root) {
+        return [].map.call(root, function(node) {
+            var bounds = node.getBoundingClientRect();
+            return { tag: node.outerHTML, area: bounds.width * bounds.height };
+        }).sort(function(x, y) {
+            var a = x.area,
+                b = y.area;
+            return a > b ? -1 : a < b ? 1 : 0;
+        });
+    }
+
+    var sizes = scanSizes(document.querySelectorAll("*"));
+    var asdf;
+
+    function top20() {
+        for (asdf = 0; asdf < 20; asdf++) {
+            console.log(sizes[asdf])
+        }
+    }
+</script>

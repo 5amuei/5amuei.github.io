@@ -94,16 +94,16 @@ a {
 .cd-product-viewer-handle .handle {
     position: absolute;
     display: block;
-    height: 500%;
+    height: 50%;
     width: 8%;
     left: 0%;
-    top: -200%;
+    top: -20%;
     background: #b54240 url(../assets/CAD/cd-arrows.svg) no-repeat center center;
     background-size: 80%;
-    border-radius: 500%;
-    box-shadow: 0 0 0 700% rgba(181, 66, 64, 0.3), 0 0 1000% rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 0 7% rgba(181, 66, 64, 0.3), 0 0 10% rgba(0, 0, 0, 0.2);
     /* replace text with image */
-    text-indent: 100%;
+    text-indent: 10%;
     white-space: nowrap;
     overflow: hidden;
     color: transparent;

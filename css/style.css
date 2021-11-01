@@ -3,6 +3,11 @@ body {
     margin: 0;
     background: #2e2e2e;
     font-family: 'Fjalla One', sans-serif;
+    overflow: hidden;
+}
+
+.header {
+    display: none;
 }
 
 .backgroundCover {
@@ -43,7 +48,7 @@ body {
     text-align: right;
     text-decoration: none;
     display: block;
-    font-size: 120%;
+    font-size: 1.2em;
     transition-duration: 0.4s;
     cursor: pointer;
     white-space: nowrap;
@@ -82,19 +87,19 @@ body {
 .resumeHalfTextBox h2 {
     margin-left: 5%;
     text-align: left;
-    font-size: 300%;
+    font-size: 3em;
     color: #81d2f8ce;
     margin-bottom: -1%;
 }
 
 .resumeHalfTextBox h3 {
-    font-size: 200%;
+    font-size: 2em;
     font-weight: normal;
     margin-bottom: -1%;
 }
 
 .resumeHalfTextBox p {
-    font-size: 125%;
+    font-size: 1.25em;
     margin-left: 3%;
 }
 
@@ -194,9 +199,9 @@ body {
 .fsaeSlideContainer {
     position: absolute;
     right: 0%;
-    width: 50vw;
+    width: 50%;
     top: 0%;
-    height: 65vh;
+    height: 65%;
     overflow: hidden;
     z-index: inherit;
 }
@@ -293,26 +298,26 @@ body {
 }
 
 h1.leftHalfText {
-    font-size: 300%;
+    font-size: 3em;
     margin: 0;
     margin-bottom: 5%;
     font-weight: normal;
 }
 
 h2.leftHalfText {
-    font-size: 200%;
+    font-size: 2em;
     margin: 0;
 }
 
 h3.leftHalfText {
-    font-size: 150%;
+    font-size: 1.5em;
     margin-top: 0%;
     margin-bottom: 5%;
     font-weight: normal;
 }
 
 p.leftHalfText {
-    font-size: 150%;
+    font-size: 1.5em;
     margin: 3%;
     margin-top: 2%;
 }
@@ -678,7 +683,7 @@ p.leftHalfText {
     position: absolute;
     text-align: center;
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 3em;
     color: white;
     z-index: inherit;
     left: 25%;
