@@ -505,33 +505,24 @@ p.leftHalfText {
     z-index: inherit;
 }
 
-.timelineImgContainer {
+.timelineContainer {
     position: absolute;
     top: 0vh;
+    height: 100vh;
+    right: 0vw;
+    width: 60vw;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.timelineImgContainer {
+    display: inline-block;
     height: 65vh;
-    right: 0vw;
     width: 60vw;
     overflow: hidden;
     z-index: inherit;
-}
-
-.timelineContainer {
-    background-color: #81d2f8ce;
-    position: absolute;
-    top: 65vh;
-    height: 35vh;
-    right: 0vw;
-    width: 60vw;
-    overflow: hidden;
-    z-index: inherit;
-}
-
-.timelineImg {
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: auto;
-    z-index: inherit;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
 
 .timelineHidden {
@@ -545,22 +536,18 @@ p.leftHalfText {
 }
 
 .timelineTextContainer {
-    position: absolute;
+    display: inline-block;
     color: white;
-    top: 70vh;
-    height: 20vh;
-    right: 0vw;
-    width: 55vw;
-    margin: 2%;
+    height: 25%;
+    width: 100%;
     text-align: center;
     z-index: inherit;
+    background-color: #81d2f8ce;
 }
 
 .timelineTextContainer h2 {
     font-size: 300%;
     font-weight: bold;
-    margin-top: -2vh;
-    margin-bottom: -2vh;
     z-index: inherit;
 }
 
@@ -569,13 +556,20 @@ p.leftHalfText {
     z-index: inherit;
 }
 
+.timelineButtonContainer {
+    display: inline-block;
+    height: 10%;
+    width: 100%;
+    background-color: #81d2f8ce;
+}
+
 .timelineLine {
-    border-radius: 0.5vh;
+    border-radius: 1vw;
     background-color: white;
-    top: 70vh;
-    right: 2vw;
-    width: 53vw;
-    height: 1vh;
+    top: 70%;
+    right: 5%;
+    width: 90%;
+    height: 1%;
     position: absolute;
     overflow: hidden;
     z-index: inherit;
@@ -583,8 +577,8 @@ p.leftHalfText {
 
 .timelineTruck {
     color: white;
-    top: 65vh;
-    right: 52.50vw;
+    top: 66%;
+    right: 92.5%;
     font-size: 250%;
     position: absolute;
     z-index: inherit;
@@ -593,19 +587,17 @@ p.leftHalfText {
 
 .timelineSign {
     color: white;
-    top: 65vh;
+    top: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     font-size: 250%;
-    position: absolute;
+    position: relative;
     cursor: pointer;
     z-index: inherit;
 }
 
 .timelineSignActive {
-    color: #4957d1;
-    top: 65vh;
-    font-size: 250%;
-    position: absolute;
-    z-index: inherit;
+    color: #2e2e2e !important;
 }
 
 

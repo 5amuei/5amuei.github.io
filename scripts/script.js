@@ -19,6 +19,7 @@ window.onload = function() {
     })
     document.getElementById("hex7Button").addEventListener("click", function() {
         loadImg("hex7Img", "hex7Button", "hex7ButtonBackground")
+        dawnOfTime()
     })
     document.getElementById("timeline0Sign").addEventListener("click", function() {
         timeTravel("timeline0")
@@ -82,6 +83,10 @@ function showPhone() {
     }
 }
 
+function dawnOfTime() {
+    document.getElementById("timeline0Sign").classList.add("timelineSignActive");
+}
+
 function timeTravel(timeZone) {
     var signID = timeZone + 'Sign';
     var truckPositionStart = window.getComputedStyle(document.getElementById('timeline0Sign')).right;
@@ -102,4 +107,10 @@ function timeTravel(timeZone) {
         timeToShow[j].classList.remove("timelineHidden");
         timeToShow[j].classList.add("timelineShow");
     }
+    var activeSign = document.getElementsByClassName("timelineSignActive");
+    var k;
+    for (k = 0; k < activeSign.length; k++) {
+        activeSign[k].classList.remove("timelineSignActive");
+    }
+    document.getElementById(signID).classList.add("timelineSignActive");
 }
