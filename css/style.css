@@ -516,13 +516,19 @@ p.leftHalfText {
 }
 
 .timelineImgContainer {
-    display: inline-block;
-    height: 65vh;
-    width: 60vw;
+    position: relative;
+    height: 65%;
+    width: 100%;
     overflow: hidden;
     z-index: inherit;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+}
+
+.timelineImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: inherit;
 }
 
 .timelineHidden {
@@ -540,6 +546,7 @@ p.leftHalfText {
     color: white;
     height: 25%;
     width: 100%;
+    margin: 0%;
     text-align: center;
     z-index: inherit;
     background-color: #81d2f8ce;
@@ -558,6 +565,7 @@ p.leftHalfText {
 
 .timelineButtonContainer {
     display: inline-block;
+    margin: 0%;
     height: 10%;
     width: 100%;
     background-color: #81d2f8ce;
