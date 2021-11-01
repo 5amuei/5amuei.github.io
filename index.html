@@ -282,36 +282,36 @@
                 <div class="timelineTruck" id="timeTruck">
                     <i class="fas fa-truck"></i>
                 </div>
-                <a class="timelineSign" id="timeline0Sign">
+                <a class="timelineSign" id="timeline0Sign" style="right:83%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline1Sign">
+                <a class="timelineSign" id="timeline1Sign" style="right:73%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline2Sign">
+                <a class="timelineSign" id="timeline2Sign" style="right:63%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline3Sign">
+                <a class="timelineSign" id="timeline3Sign" style="right:53%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline4Sign">
+                <a class="timelineSign" id="timeline4Sign" style="right:43%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline5Sign">
+                <a class="timelineSign" id="timeline5Sign" style="right:33%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline6Sign">
+                <a class="timelineSign" id="timeline6Sign" style="right:23%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline7Sign">
+                <a class="timelineSign" id="timeline7Sign" style="right:13%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
-                <a class="timelineSign" id="timeline8Sign" style="margin-right:12%; right:0;">
+                <a class="timelineSign" id="timeline8Sign" style="right:3%;">
                     <i class="fas fa-map-signs"></i>
                 </a>
             </div>
             <!-- TIMELINE 0 START -->
-            <div class="timelineTextContainer timelineShow timeline0">
+            <div class="timelineTextContainer timeline0">
                 <h2>START</h2>
                 <p>This interactive timeline follows the progress my fiancee and I made on turning a box truck into a tiny home.</p>
                 <p>Click on the street signs to see the lessons we learned.</p>
@@ -372,24 +372,3 @@
 </body>
 
 </html>
-<script>
-    function scanSizes(root) {
-        return [].map.call(root, function(node) {
-            var bounds = node.getBoundingClientRect();
-            return { tag: node.outerHTML, area: bounds.width * bounds.height };
-        }).sort(function(x, y) {
-            var a = x.area,
-                b = y.area;
-            return a > b ? -1 : a < b ? 1 : 0;
-        });
-    }
-
-    var sizes = scanSizes(document.querySelectorAll("*"));
-    var asdf;
-
-    function top20() {
-        for (asdf = 0; asdf < sizes.length; asdf++) {
-            console.log(sizes[asdf])
-        }
-    }
-</script>

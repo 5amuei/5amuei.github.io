@@ -511,6 +511,7 @@ p.leftHalfText {
 }
 
 .timelineContainer {
+    background-color: #81d2f8ce;
     position: absolute;
     top: 0vh;
     height: 100vh;
@@ -547,52 +548,44 @@ p.leftHalfText {
 }
 
 .timelineTextContainer {
-    display: inline-block;
+    position: absolute;
     color: white;
-    height: 25%;
-    width: 100%;
-    margin: 0%;
+    top: 70vh;
+    height: 20vh;
+    right: 0vw;
+    width: 55vw;
+    margin: 2%;
     text-align: center;
-    z-index: inherit;
-    background-color: #81d2f8ce;
-    overflow: hidden;
 }
 
 .timelineTextContainer h2 {
-    font-size: 3em;
+    font-size: 300%;
     font-weight: bold;
-    z-index: inherit;
+    margin-top: -2vh;
+    margin-bottom: -2vh;
 }
 
 .timelineTextContainer p {
-    font-size: 1.5em;
-    z-index: inherit;
-}
-
-.timelineButtonContainer {
-    display: inline-block;
-    margin: 0%;
-    height: 10%;
-    width: 100%;
-    background-color: #81d2f8ce;
+    font-size: 150%;
 }
 
 .timelineLine {
-    border-radius: 1vw;
+    border-radius: 0.5vh;
     background-color: white;
-    top: 70.125%;
-    right: 5%;
-    width: 90%;
-    height: 1%;
+    top: 70vh;
+    right: 2vw;
+    width: 53vw;
+    height: 1vh;
     position: absolute;
+    overflow: hidden;
     z-index: inherit;
 }
 
 .timelineTruck {
     color: white;
-    top: 66%;
-    right: 92.5%;
-    font-size: 2em;
+    top: 65vh;
+    right: 52.50vw;
+    font-size: 250%;
     position: absolute;
     z-index: inherit;
     transition: 1s ease-in-out
@@ -600,13 +593,10 @@ p.leftHalfText {
 
 .timelineSign {
     color: white;
-    top: 2%;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    font-size: 2em;
-    position: relative;
+    top: 65vh;
+    font-size: 250%;
+    position: absolute;
     cursor: pointer;
-    z-index: inherit;
 }
 
 .timelineSignActive {
