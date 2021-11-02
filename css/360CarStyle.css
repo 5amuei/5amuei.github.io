@@ -51,7 +51,7 @@ a {
     left: 10%;
     width: 80%;
     max-width: 40vw;
-    height: 10%;
+    height: 2%;
     background: #4d4d4d;
 }
 
@@ -94,14 +94,14 @@ a {
 .cd-product-viewer-handle .handle {
     position: absolute;
     display: block;
-    height: 50%;
+    height: 500%;
     width: 8%;
     left: 0%;
-    top: -20%;
-    background: #b54240 url(../assets/CAD/cd-arrows.svg) no-repeat center center;
-    background-size: 80%;
+    top: -200%;
+    background: red url(../assets/CAD/cd-arrows.svg) no-repeat center center;
+    background-size: 70%;
     border-radius: 50%;
-    box-shadow: 0 0 0 7% rgba(181, 66, 64, 0.3), 0 0 10% rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 50px rgba(175, 0, 0, 0.3), 0 0 0 50px rgba(0, 0, 0, 0.2);
     /* replace text with image */
     text-indent: 10%;
     white-space: nowrap;

@@ -102,6 +102,7 @@ body {
     font-size: 3em;
     color: #81d2f8ce;
     margin-bottom: -1%;
+    margin-top: 1%;
 }
 
 .resumeHalfTextBox h3 {
@@ -252,10 +253,11 @@ body {
     z-index: 50;
     position: fixed;
     background: #2e2e2e;
+    overflow: hidden;
 }
 
 .leftHalfVideo {
-    margin-top: 21%;
+    margin-top: 23%;
     margin-left: 0%;
     width: 100%;
     object-fit: cover;
