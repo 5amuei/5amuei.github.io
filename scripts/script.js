@@ -60,7 +60,9 @@ function showPage() {
 
 function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
     hexTextBackground = hexButtonString + "Text";
+    hexButtonBackgroundImgString = hexButtonBackgroundString + ".png";
     if (document.getElementById(hexImageString).style.display == "none") {
+        document.getElementById(hexButtonBackgroundString).src = "https://github.com/5amuei/5amuei.github.io/raw/master/assets/icons/back.png";
         document.getElementById(hexButtonBackgroundString).style.backgroundColor = "white";
         document.getElementById(hexTextBackground).style.backgroundColor = "#81d2f8ce";
         document.getElementById(hexImageString).classList.remove("fade-out");
@@ -73,6 +75,7 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
         document.getElementById(hexImageString).classList.remove("fade-in");
         document.getElementById(hexImageString).classList.add("fade-out");
         document.getElementById(hexButtonString).style.zIndex = 10;
+        document.getElementById(hexButtonBackgroundString).src = hexButtonBackgroundImgString;
         document.getElementById(hexButtonBackgroundString).style.backgroundColor = "#81d2f8ce";
         document.getElementById(hexTextBackground).style.backgroundColor = "transparent";
         setTimeout(function() {
