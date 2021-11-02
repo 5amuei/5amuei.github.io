@@ -1,4 +1,5 @@
 window.onload = function() {
+    showPage();
     document.getElementById("hex1Button").addEventListener("click", function() {
         loadImg("hex1Img", "hex1Button", "hex1ButtonBackground")
     })
@@ -49,6 +50,13 @@ window.onload = function() {
         timeTravel("timeline8")
     })
 }
+
+function showPage() {
+    document.getElementById("hiddenBody").style.display = "none";
+    document.getElementById("hexLoader").style.display = "none";
+    document.getElementById("hexLoaderText").style.display = "none";
+    console.log("page is loaded");
+};
 
 function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
     hexTextBackground = hexButtonString + "Text";

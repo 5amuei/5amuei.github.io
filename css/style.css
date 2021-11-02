@@ -6,6 +6,18 @@ body {
     overflow: hidden;
 }
 
+#hiddenBody {
+    position: absolute;
+    background: #2e2e2e;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2000;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    overflow: hidden;
+}
+
 .header {
     display: none;
 }
@@ -670,14 +682,13 @@ p.leftHalfText {
 #hex5ButtonText,
 #hex6ButtonText,
 #hex7ButtonText {
-    position: absolute;
+    position: relative;
     text-align: center;
     font-weight: bold;
-    font-size: 3em;
+    font-size: 1.25em;
     color: white;
     z-index: inherit;
-    left: 25%;
-    top: 50%;
+    margin-top: 37.5%;
 }
 
 .hex:hover #hex1ButtonText,
@@ -689,7 +700,7 @@ p.leftHalfText {
 .hex:hover #hex7ButtonText {
     background-color: #81d2f8ce;
     pointer-events: none;
-    position: absolute;
+    position: relative;
 }
 
 .hexGroup {
@@ -740,6 +751,96 @@ p.leftHalfText {
 
 
 /* End of hex buttons */
+
+
+/* LOADER START*/
+
+#hiddenBody {
+    position: absolute;
+    background: #2e2e2e;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2000;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+
+#hexLoader {
+    display: block;
+    z-index: 2000;
+}
+
+#hexLoaderText {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: white;
+    z-index: 2500;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hexLoaderText p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+.innerHexLoader {
+    position: absolute;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    height: 9.8vw;
+    width: 11.27vw;
+    overflow: hidden;
+    background-color: #2e2e2e;
+    z-index: inherit;
+    top: .1vw;
+    left: .115vw;
+}
+
+.hexLoaderContainer {
+    height: 10vw;
+    width: 11.5vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+/* End LOADER */
 
 
 /* Start of fade-in animation */
