@@ -19,7 +19,7 @@ window.onload = function() {
     })
     document.getElementById("hex7Button").addEventListener("click", function() {
         loadImg("hex7Img", "hex7Button", "hex7ButtonBackground")
-        dawnOfTime()
+        dawnOfTime();
     })
     document.getElementById("timeline0Sign").addEventListener("click", function() {
         timeTravel("timeline0")
@@ -85,6 +85,11 @@ function showPhone() {
 
 function dawnOfTime() {
     document.getElementById("timeline0Sign").classList.add("timelineSignActive");
+    var dawnOfShow = document.getElementsByClassName("timeline0");
+    for (i = 0; i < dawnOfShow.length; i++) {
+        dawnOfShow[i].classList.add("timelineShow")
+        dawnOfShow[i].classList.remove("timelineHidden")
+    }
 }
 
 function timeTravel(timeZone) {
@@ -98,12 +103,13 @@ function timeTravel(timeZone) {
     var timeToHide = document.getElementsByClassName("timelineShow");
     var timeToShow = document.getElementsByClassName(timeZone);
     var i;
-    for (i = 0; i < timeToHide.length; i++) {
-        timeToHide[i].classList.add("timelineHidden");
-        timeToHide[i].classList.remove("timelineShow");
+    while (timeToHide.length > 0) {
+        timeToHide[0].classList.add("timelineHidden");
+        timeToHide[0].classList.remove("timelineShow");
     }
     var j;
     for (j = 0; j < timeToShow.length; j++) {
+        console.log(j);
         timeToShow[j].classList.remove("timelineHidden");
         timeToShow[j].classList.add("timelineShow");
     }
