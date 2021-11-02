@@ -63,7 +63,7 @@ var hexTextHolder;
 function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
     hexTextBackground = hexButtonString + "Text";
     if (document.getElementById(hexTextBackground).innerText !== "BACK") { hexTextHolder = document.getElementById(hexTextBackground).innerText; }
-    hexButtonBackgroundImgString = hexButtonBackgroundString + ".png";
+    hexButtonBackgroundImgString = "https://github.com/5amuei/5amuei.github.io/raw/master/assets/icons/" + hexButtonBackgroundString + ".png";
     if (document.getElementById(hexImageString).style.display == "none") {
         document.getElementById(hexTextBackground).innerText = "BACK";
         console.log(hexTextHolder);
