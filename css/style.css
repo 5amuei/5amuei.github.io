@@ -94,25 +94,27 @@ body {
     left: 5%;
     color: white;
     white-space: nowrap;
+    height: 56.56vh;
 }
 
 .resumeHalfTextBox h2 {
     margin-left: 5%;
     text-align: left;
-    font-size: 3em;
+    font-size: 6.4vh;
     color: #81d2f8ce;
     margin-bottom: -1%;
     margin-top: 1%;
 }
 
 .resumeHalfTextBox h3 {
-    font-size: 2em;
+    font-size: 4.35vh;
+    ;
     font-weight: normal;
     margin-bottom: -1%;
 }
 
 .resumeHalfTextBox p {
-    font-size: 1.25em;
+    font-size: 2.67vh;
     margin-left: 3%;
 }
 
