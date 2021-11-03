@@ -102,6 +102,17 @@ function showPhone() {
 }
 
 function dawnOfTime() {
+    document.getElementById("timeTruck").style.transform = "translate(0px)";
+    var timeToHide = document.getElementsByClassName("timelineShow");
+    while (timeToHide.length > 0) {
+        timeToHide[0].classList.add("timelineHidden");
+        timeToHide[0].classList.remove("timelineShow");
+    }
+    var activeSign = document.getElementsByClassName("timelineSignActive");
+    var j;
+    for (j = 0; j < activeSign.length; j++) {
+        activeSign[j].classList.remove("timelineSignActive");
+    }
     document.getElementById("timeline0Sign").classList.add("timelineSignActive");
     var dawnOfShow = document.getElementsByClassName("timeline0");
     for (i = 0; i < dawnOfShow.length; i++) {
@@ -120,7 +131,6 @@ function timeTravel(timeZone) {
 
     var timeToHide = document.getElementsByClassName("timelineShow");
     var timeToShow = document.getElementsByClassName(timeZone);
-    var i;
     while (timeToHide.length > 0) {
         timeToHide[0].classList.add("timelineHidden");
         timeToHide[0].classList.remove("timelineShow");
