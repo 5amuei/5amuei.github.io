@@ -94,7 +94,7 @@ body {
 }
 
 .designMiddleLeftShape {
-    shape-outside: polygon(0% 0%, 21.66667% 0%, 33.33333% 50%, 66.66666% 50%, 66.66666% 100%, 0% 100%);
+    shape-outside: polygon(0% 0%, 21.66667% 0%, 33.33333% 50%, 0% 50%);
     float: right;
     width: 100%;
     height: 100%;
@@ -102,7 +102,7 @@ body {
 }
 
 .designMiddleRightShape {
-    shape-outside: polygon(66.66666% 50%, 55% 0%, 100% 0%, 100% 100%, 0% 100%, 66.66666% 100%);
+    shape-outside: polygon(66.66666% 50%, 55% 0%, 100% 0%, 100% 50%);
     float: left;
     width: 100%;
     height: 100%;
