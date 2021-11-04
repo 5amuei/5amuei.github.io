@@ -24,14 +24,23 @@ body {
 
 .AboutTextBoxContainer {
     position: absolute;
-    width: 50%;
-    height: 60%;
-    top: 20%;
-    left: 45%;
+    width: 40%;
+    height: 70%;
+    top: 15%;
+    left: 56%;
     z-index: inherit;
     overflow: hidden;
     text-align: center;
     color: white;
+}
+
+.AboutTextBoxContainer p {
+    font-size: 7vh;
+}
+
+.AboutTextBoxContainer h2 {
+    font-size: 10vh;
+    font-weight: bold;
 }
 
 .textBox {
@@ -56,34 +65,38 @@ body {
     height: 25%;
     top: 65%;
     left: 5%;
+    font-size: 3.25vh;
 }
 
 .CFDTextBoxContainer {
     position: absolute;
     width: 27%;
-    height: 30%;
+    height: 31%;
     top: 5%;
     left: 52%;
+    font-size: 2vh;
 }
 
 .CADTextBoxContainer {
     position: absolute;
-    width: 27%;
-    height: 30%;
-    top: 5%;
+    width: 40%;
+    height: 24%;
+    top: 4%;
     left: 45%;
+    font-size: 3vh;
 }
 
 .FSAETextBoxContainer {
     position: absolute;
-    width: 50%;
-    height: 35%;
-    top: 65%;
-    left: 50%;
+    width: 40%;
+    height: 30%;
+    top: 70%;
+    left: 55%;
     z-index: inherit;
     overflow: hidden;
     text-align: center;
     color: white;
+    font-size: 3.5vh;
 }
 
 .ProgrammingTextBoxContainer {
@@ -95,13 +108,20 @@ body {
 }
 
 .ProjmanTextBoxContainer {
-    position: absolute;
-    width: 35%;
-    height: 40%;
-    top: 5%;
-    left: 0%;
+    width: 100%;
+    height: 100%;
     z-index: inherit;
     overflow: hidden;
+}
+
+.ProjmanShapedTextBox {
+    shape-outside: polygon(0% 0%, 0% 55%, 40% 0%);
+    shape-margin: 2%;
+    float: left;
+    width: 35%;
+    height: 40%;
+    float: right;
+    z-index: inherit;
     text-align: center;
     color: black;
 }
@@ -190,14 +210,14 @@ body {
 }
 
 .resumeHalfTextBox h3 {
-    font-size: 4.35vh;
+    font-size: 3.35vh;
     ;
     font-weight: normal;
     margin-bottom: -1%;
 }
 
 .resumeHalfTextBox p {
-    font-size: 2.67vh;
+    font-size: 2.25vh;
     margin-left: 3%;
     margin-bottom: -1%;
 }
@@ -905,6 +925,17 @@ p.leftHalfText {
     width: 11.5vw;
     overflow: hidden;
     background-color: white;
+    z-index: inherit;
+}
+
+.hexCADShadow {
+    position: absolute;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    height: 11vw;
+    width: 12.65vw;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: inherit;
 }
 

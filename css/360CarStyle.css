@@ -101,7 +101,7 @@ a {
     background: red url(../assets/CAD/cd-arrows.svg) no-repeat center center;
     background-size: 70%;
     border-radius: 50%;
-    box-shadow: 0 0 0 50px rgba(175, 0, 0, 0.3), 0 0 0 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 20px rgba(175, 0, 0, 0.3), 0 0 0 20px rgba(0, 0, 0, 0.2);
     /* replace text with image */
     text-indent: 10%;
     white-space: nowrap;
