@@ -151,6 +151,11 @@ body {
     font-size: 3.5vh;
 }
 
+.ProgrammingTextBoxImg {
+    height: 30%;
+    width: auto;
+}
+
 .ProjmanTextBoxContainer {
     position: absolute;
     width: 100%;
