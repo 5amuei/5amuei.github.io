@@ -109,25 +109,28 @@ body {
 }
 
 .ProjmanTextBoxContainer {
+    position: absolute;
     width: 100%;
     height: 100%;
     z-index: inherit;
     overflow: hidden;
 }
 
-.ProjmanShapedTextBox {
+.ProjmanShape {
     shape-outside: polygon(0% 55%, 0% 100%, 100% 100%, 100% 0%, 40% 0%);
     shape-margin: 2%;
-    float: left;
+    float: right;
     width: 100%;
     height: 100%;
-    z-index: inherit;
+    text-align: justify;
 }
 
 .ProjmanTextBox {
-    text-align: center;
+    text-align: justify;
     color: black;
-    display: inline-block;
+    z-index: inherit;
+    font-size: 2vh;
+    margin: 2%;
 }
 
 .backgroundCover {
