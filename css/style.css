@@ -95,23 +95,23 @@ body {
 }
 
 .designMiddleLeftShape {
-    shape-outside: polygon(0% 0%, 43.33333% 0%, 66.66666% 100%, 0% 100%);
+    shape-outside: polygon(0% 0%, 65% 0%, 100% 100%, 0% 100%);
     shape-margin: 1%;
     top: 0%;
     left: 0%;
-    float: right;
-    width: 50%;
+    float: left;
+    width: 33.33333%;
     height: 50%;
     text-align: justify;
 }
 
 .designMiddleRightShape {
-    shape-outside: polygon(23.33333% 100%, 0% 0%, 100% 0%, 100% 100%);
+    shape-outside: polygon(5% 75.5%, 0% 55%, 5% 34%, 26.5% 34%, 19% 0%, 100% 0%, 100% 100%, 40% 100%, 35% 75.5%, 15% 75.5%);
     shape-margin: 1%;
-    float: left;
+    float: right;
     top: 0%;
     right: 0%;
-    width: 45%;
+    width: 55.75%;
     height: 50%;
     text-align: justify;
 }
@@ -129,7 +129,7 @@ body {
     text-align: justify;
     color: white;
     z-index: inherit;
-    font-size: 2vh;
+    font-size: 3.25vh;
     margin: 1%;
 }
 
