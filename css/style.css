@@ -937,6 +937,9 @@ p.leftHalfText {
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: inherit;
+    top: 13.375vw;
+    right: 34.175vw;
+    display: block;
 }
 
 
