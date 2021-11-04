@@ -22,6 +22,90 @@ body {
     display: none;
 }
 
+.AboutTextBoxContainer {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    left: 45%;
+    z-index: inherit;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.textBox {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #232323cc;
+    border-radius: 5%;
+    z-index: inherit;
+    overflow: hidden;
+}
+
+.textBox p {
+    margin: 3%;
+}
+
+.FEATextBoxContainer {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    top: 65%;
+    left: 5%;
+}
+
+.CFDTextBoxContainer {
+    position: absolute;
+    width: 27%;
+    height: 30%;
+    top: 5%;
+    left: 52%;
+}
+
+.CADTextBoxContainer {
+    position: absolute;
+    width: 27%;
+    height: 30%;
+    top: 5%;
+    left: 45%;
+}
+
+.FSAETextBoxContainer {
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    top: 65%;
+    left: 50%;
+    z-index: inherit;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.ProgrammingTextBoxContainer {
+    position: absolute;
+    width: 55%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+}
+
+.ProjmanTextBoxContainer {
+    position: absolute;
+    width: 35%;
+    height: 40%;
+    top: 5%;
+    left: 0%;
+    z-index: inherit;
+    overflow: hidden;
+    text-align: center;
+    color: black;
+}
+
 .backgroundCover {
     position: absolute;
     background: #2e2e2e;
@@ -357,6 +441,33 @@ p.leftHalfText {
     background-color: #2e2e2e;
 }
 
+.polygonLeftMiddleThird {
+    clip-path: polygon(0% 33.33333%, 29.44445% 33.33333%, 37.2% 66.66666%, 0% 66.66666%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonLeftMiddleThirdTextContainer {
+    top: 33.33333%;
+    left: 0%;
+    width: 30%;
+    height: 33%;
+    position: relative;
+    overflow: hidden;
+    z-index: inherit;
+    text-align: center;
+}
+
+.polygonLeftMiddleThird p {
+    position: relative;
+    margin: 3%;
+}
+
 .polygonLeftLowerThird {
     clip-path: polygon(0% 100%, 45% 100%, 37.2% 66.66666%, 0% 66.66666%);
     width: 100%;
@@ -384,6 +495,23 @@ p.leftHalfText {
     overflow: hidden;
     z-index: inherit;
     background-color: #81d2f8ce;
+}
+
+.polygonMiddleUpperHalfTextContainer {
+    top: 0%;
+    left: 21.66667%;
+    width: 34%;
+    height: 33%;
+    position: relative;
+    overflow: hidden;
+    z-index: inherit;
+    text-align: center;
+    color: black;
+}
+
+.polygonMiddleUpperHalfTextContainer p {
+    position: relative;
+    margin: 3%;
 }
 
 .polygonMiddleUpperHalfMedia {
@@ -430,6 +558,33 @@ p.leftHalfText {
     object-fit: cover;
     z-index: inherit;
     background-color: #2e2e2e;
+}
+
+.polygonRightMiddleThird {
+    clip-path: polygon(62.77777% 33.33333%, 100% 33.33333%, 100% 66.66666%, 70.55555% 66.66666%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonRightMiddleThirdTextContainer {
+    top: 33.33333%;
+    left: 65%;
+    width: 30%;
+    height: 33%;
+    position: relative;
+    overflow: hidden;
+    z-index: inherit;
+    text-align: center;
+}
+
+.polygonRightMiddleThird p {
+    position: relative;
+    margin: 3%;
 }
 
 .polygonRightUpperThird {
