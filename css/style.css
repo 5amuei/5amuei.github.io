@@ -65,7 +65,7 @@ body {
     height: 25%;
     top: 65%;
     left: 5%;
-    font-size: 3.25vh;
+    font-size: 1.5vw;
 }
 
 .CFDTextBoxContainer {
@@ -143,7 +143,7 @@ body {
     height: 24%;
     top: 4%;
     left: 45%;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .FSAETextBoxContainer {
@@ -824,14 +824,14 @@ p.leftHalfText {
 }
 
 .timelineTextContainer h2 {
-    font-size: 1.5vw;
+    font-size: 2.5vw;
     font-weight: bold;
     margin-top: -1vh;
     margin-bottom: -2vh;
 }
 
 .timelineTextContainer p {
-    font-size: 0.75vw;
+    font-size: 1vw;
 }
 
 .timelineLine {
