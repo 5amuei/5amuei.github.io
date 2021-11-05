@@ -938,7 +938,7 @@ p.leftHalfText {
     position: relative;
     text-align: center;
     font-weight: bold;
-    font-size: 0.625vw;
+    font-size: 1.125vw;
     color: white;
     z-index: inherit;
     margin-top: 37.5%;
@@ -1045,7 +1045,7 @@ p.leftHalfText {
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 0.625vw;
+    font-size: 1.125vw;
     color: white;
     z-index: 2500;
     height: 100vh;
