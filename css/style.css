@@ -92,6 +92,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: justify;
+    pointer-events: none;
 }
 
 .designMiddleLeftShape {
@@ -103,6 +104,7 @@ body {
     width: 33.33333%;
     height: 50%;
     text-align: justify;
+    pointer-events: none;
 }
 
 .designMiddleRightShape {
@@ -114,6 +116,7 @@ body {
     width: 55.75%;
     height: 50%;
     text-align: justify;
+    pointer-events: none;
 }
 
 .designRightShape {
@@ -123,6 +126,7 @@ body {
     width: 100%;
     height: 100%;
     text-align: justify;
+    pointer-events: none;
 }
 
 .designText {
@@ -184,14 +188,16 @@ body {
     width: 100%;
     height: 100%;
     text-align: justify;
+    pointer-events: none;
 }
 
 .ProjmanTextBox {
     text-align: justify;
     color: white;
     z-index: inherit;
-    font-size: 2vh;
+    font-size: 1vw;
     margin: 2%;
+    pointer-events: none;
 }
 
 .backgroundCover {
@@ -486,26 +492,26 @@ body {
 }
 
 h1.leftHalfText {
-    font-size: 3em;
+    font-size: 300%;
     margin: 0;
     margin-bottom: 5%;
     font-weight: normal;
 }
 
 h2.leftHalfText {
-    font-size: 2em;
+    font-size: 200%;
     margin: 0;
 }
 
 h3.leftHalfText {
-    font-size: 1.5em;
+    font-size: 150%;
     margin-top: 0%;
     margin-bottom: 5%;
     font-weight: normal;
 }
 
 p.leftHalfText {
-    font-size: 1.5em;
+    font-size: 150%;
     margin: 3%;
     margin-top: 2%;
 }
@@ -932,7 +938,7 @@ p.leftHalfText {
     position: relative;
     text-align: center;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 125%;
     color: white;
     z-index: inherit;
     margin-top: 37.5%;
@@ -1039,7 +1045,7 @@ p.leftHalfText {
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 125%;
     color: white;
     z-index: 2500;
     height: 100vh;
