@@ -1019,11 +1019,10 @@ p.leftHalfText {
     height: 11vw;
     width: 12.65vw;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #2e2e2e2e;
     z-index: inherit;
-    top: 13.375vw;
-    right: 34.175vw;
     display: block;
+    pointer-events: none;
 }
 
 

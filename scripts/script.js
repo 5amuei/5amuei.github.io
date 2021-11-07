@@ -70,6 +70,7 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
         document.getElementById(hexTextBackground).innerText = "BACK";
         document.getElementById(hexButtonBackgroundString).src = "https://github.com/5amuei/5amuei.github.io/raw/master/assets/icons/back.png";
         document.getElementById(hexButtonBackgroundString).style.backgroundColor = "white";
+        if (hexButtonString == "hex4Button") { document.getElementById(hexButtonBackgroundString).style.backgroundColor = "#2e2e2e2e"; }
         document.getElementById(hexTextBackground).style.backgroundColor = "#81d2f8ce";
         document.getElementById(hexImageString).classList.remove("fade-out");
         document.getElementById(hexImageString).style.zIndex = 100;
