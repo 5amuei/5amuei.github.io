@@ -1,0 +1,1234 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+body {
+    margin: 0;
+    background: #2e2e2e;
+    font-family: 'Fjalla One', sans-serif;
+    overflow: hidden;
+}
+
+#hiddenBody {
+    position: absolute;
+    background: #2e2e2e;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2000;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.header {
+    display: none;
+}
+
+.AboutTextBoxContainer {
+    position: absolute;
+    width: 40%;
+    height: 85%;
+    top: 10%;
+    left: 56%;
+    z-index: inherit;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+}
+
+.AboutTextBoxContainer p {
+    font-size: 3.4vw;
+}
+
+.AboutTextBoxContainer h2 {
+    font-size: 5vw;
+    font-weight: bold;
+}
+
+.textBox {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #232323cc;
+    border-radius: 2vw;
+    z-index: inherit;
+    overflow: hidden;
+}
+
+.textBox p {
+    margin: 3%;
+}
+
+.FEATextBoxContainer {
+    position: absolute;
+    width: 40%;
+    height: 25%;
+    top: 65%;
+    left: 5%;
+    font-size: 1.5vw;
+}
+
+.CFDTextBoxContainer {
+    position: absolute;
+    width: 27%;
+    height: 31%;
+    top: 5%;
+    left: 52%;
+    font-size: 1vw;
+}
+
+.designTextBoxContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+    overflow: hidden;
+}
+
+.designLeftShape {
+    shape-outside: polygon(0% 0%, 0% 33.33333%, 29.44445% 33.33333%, 37.2% 66.66666%, 0% 66.66666%, 0% 100%, 100% 100%, 100% 0%);
+    shape-margin: 1%;
+    float: right;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.designMiddleLeftShape {
+    shape-outside: polygon(0% 0%, 65% 0%, 100% 100%, 0% 100%);
+    shape-margin: 1%;
+    top: 0%;
+    left: 0%;
+    float: left;
+    width: 33.33333%;
+    height: 50%;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.designMiddleRightShape {
+    shape-outside: polygon(5% 75.5%, 0% 55%, 5% 34%, 26.5% 34%, 19% 0%, 100% 0%, 100% 100%, 40% 100%, 35% 75.5%, 15% 75.5%);
+    shape-margin: 1%;
+    float: right;
+    top: 0%;
+    right: 0%;
+    width: 55.75%;
+    height: 50%;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.designRightShape {
+    shape-outside: polygon(0% 0%, 100% 0%, 100% 33.33333%, 62.77777% 33.33333%, 70.55555% 66.66666%, 100% 66.66666%, 100% 100%, 0% 100%);
+    shape-margin: 1%;
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.designText {
+    text-align: justify;
+    color: white;
+    z-index: inherit;
+    font-size: 1.6vw;
+    margin: 1%;
+}
+
+.CADTextBoxContainer {
+    position: absolute;
+    width: 40%;
+    height: 24%;
+    top: 4%;
+    left: 45%;
+    font-size: 1.4vw;
+}
+
+.FSAETextBoxContainer {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 70%;
+    left: 55%;
+    z-index: inherit;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 1.7vw;
+}
+
+.ProgrammingTextBoxContainer {
+    position: absolute;
+    width: 55%;
+    height: 90%;
+    top: 5%;
+    left: 5%;
+    font-size: 1.7vw;
+}
+
+.ProgrammingTextBoxImg {
+    height: 56%;
+    width: auto;
+}
+
+.ProjmanTextBoxContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: inherit;
+    overflow: hidden;
+}
+
+.ProjmanShape {
+    shape-outside: polygon(0% 55%, 0% 100%, 100% 100%, 100% 0%, 40% 0%);
+    shape-margin: 2%;
+    float: right;
+    width: 100%;
+    height: 100%;
+    text-align: justify;
+    pointer-events: none;
+}
+
+.ProjmanTextBox {
+    text-align: justify;
+    color: white;
+    z-index: inherit;
+    font-size: 1vw;
+    margin: 2%;
+    pointer-events: none;
+}
+
+.backgroundCover {
+    position: absolute;
+    background: #2e2e2e;
+    height: 100vh;
+    width: 100vw;
+    z-index: 20;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.profileMEcontainer {
+    position: absolute;
+    left: 30%;
+    top: 7.5%;
+    overflow: hidden;
+    height: 92.5%;
+}
+
+.profileME {
+    height: 100%;
+    width: auto;
+    bottom: 0%;
+}
+
+.buttonAboutMe {
+    position: relative;
+    margin-top: 0.5%;
+    margin-left: -6%;
+    min-width: 30%;
+    border: none;
+    border-radius: .5vh;
+    color: white;
+    padding: 1% 1%;
+    text-align: right;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    font-size: 1.1vw;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.buttonAbout {
+    background-color: #81d2f8ce;
+    color: white;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+}
+
+.buttonAbout:hover {
+    background-color: white;
+    color: #81d2f8ce;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    transform: translateX(5%);
+}
+
+.buttonAbout:active {
+    background-color: black;
+    color: #81d2f8ce;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    transform: translateX(5%);
+}
+
+.resumeHalfTextBox {
+    position: relative;
+    left: 5%;
+    color: white;
+    white-space: nowrap;
+}
+
+.resumeHalfTextBox h2 {
+    margin-left: 5%;
+    text-align: left;
+    font-size: 3.2vw;
+    color: #81d2f8ce;
+    margin-bottom: -1%;
+    margin-top: 1%;
+}
+
+.resumeHalfTextBox h3 {
+    font-size: 1.625vw;
+    ;
+    font-weight: normal;
+    margin-bottom: -1%;
+}
+
+.resumeHalfTextBox p {
+    font-size: 1.1vw;
+    margin-left: 3%;
+    margin-bottom: -1%;
+}
+
+.resumeLeftText {
+    text-align: left;
+}
+
+.imageContainer {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 30;
+    position: absolute;
+}
+
+.CADLeft {
+    top: 0%;
+    height: 100vh;
+    left: 0%;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.CADLeftMedia {
+    min-width: 100%;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.CADrightTop {
+    position: absolute;
+    overflow: hidden;
+    right: 0%;
+    width: 50vw;
+    top: 0vh;
+    height: 50vh;
+}
+
+.CADrightTopMedia {
+    height: 100%;
+    width: 100%;
+}
+
+.CAD360Car {
+    position: absolute;
+    right: 0%;
+    width: 50vw;
+    top: 50vh;
+    height: 50vh;
+}
+
+.FEALeft {
+    top: 0%;
+    height: 100vh;
+    left: 0%;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.FEALeftMedia {
+    height: 100%;
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.CFDRight {
+    position: absolute;
+    top: 0%;
+    height: 100vh;
+    right: 0%;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.CFDRightMedia {
+    min-width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.fsaeSlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: none;
+    z-index: inherit;
+}
+
+.fsaeSlideContainer {
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    top: 0%;
+    height: 65%;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.rightTop {
+    right: 0%;
+    width: 50vw;
+    top: 0%;
+    height: 50vh;
+}
+
+.rightBottom {
+    right: 0%;
+    width: 50vw;
+    top: 50%;
+    height: 50vh;
+}
+
+.leftHalfBanner {
+    width: 50%;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+    z-index: 110;
+}
+
+.leftHalfBannerImage {
+    width: 50%;
+    position: fixed;
+    z-index: inherit;
+}
+
+.leftHalfVideoContainer {
+    width: 50%;
+    top: 20%;
+    z-index: 50;
+    position: fixed;
+    background: #2e2e2e;
+    overflow: hidden;
+}
+
+.leftHalfVideo {
+    margin-top: 23%;
+    margin-left: 0%;
+    width: 100%;
+    object-fit: cover;
+    z-index: inherit;
+}
+
+.hiddenTextContainer {
+    position: absolute;
+    min-height: 100vh;
+    width: 50%;
+}
+
+.iSeeYou {
+    opacity: 0;
+}
+
+.peekabo {
+    z-index: inherit;
+}
+
+.peekaboo:hover .iSeeYou {
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    opacity: 1;
+    z-index: 120;
+}
+
+.hiddenTextImage {
+    width: 90%;
+    left: 5%;
+}
+
+.leftHalfTextContainer {
+    position: absolute;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+}
+
+.leftHalfTextBox {
+    position: absolute;
+    text-align: center;
+    color: white;
+    width: 70%;
+    left: 15%;
+    top: 5%;
+    background-color: #232323cc;
+    border-radius: 5%;
+}
+
+h1.leftHalfText {
+    font-size: 1.5vw;
+    margin: 0;
+    margin-bottom: 5%;
+    font-weight: normal;
+}
+
+h2.leftHalfText {
+    font-size: 1vw;
+    margin: 0;
+}
+
+h3.leftHalfText {
+    font-size: 0.75vw;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    font-weight: normal;
+}
+
+p.leftHalfText {
+    font-size: 0.75vw;
+    margin: 3%;
+    margin-top: 2%;
+}
+
+.polygonLeftUpperThird {
+    clip-path: polygon(0% 33.33333%, 29.44445% 33.33333%, 21.66667% 0%, 0% 0%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonLeftUpperThirdMedia {
+    margin-top: -2%;
+    margin-left: 0%;
+    width: 30%;
+    object-fit: cover;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonLeftMiddleThird {
+    clip-path: polygon(0% 33.33333%, 29.44445% 33.33333%, 37.2% 66.66666%, 0% 66.66666%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonLeftMiddleThirdTextContainer {
+    top: 33.33333%;
+    left: 0%;
+    width: 30%;
+    height: 33%;
+    position: relative;
+    overflow: hidden;
+    z-index: inherit;
+    text-align: center;
+}
+
+.polygonLeftMiddleThird p {
+    position: relative;
+    margin: 3%;
+}
+
+.polygonLeftLowerThird {
+    clip-path: polygon(0% 100%, 45% 100%, 37.2% 66.66666%, 0% 66.66666%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonLeftLowerThirdMedia {
+    margin-top: 18%;
+    margin-left: 0%;
+    width: 50%;
+    object-fit: cover;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonMiddleUpperHalf {
+    clip-path: polygon(33.33333% 50%, 66.66666% 50%, 55% 0%, 21.66667% 0%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #81d2f8ce;
+}
+
+.polygonMiddleUpperHalfTextContainer {
+    top: 0%;
+    left: 21.66667%;
+    width: 34%;
+    height: 33%;
+    position: relative;
+    overflow: hidden;
+    z-index: inherit;
+    text-align: center;
+    color: black;
+}
+
+.polygonMiddleUpperHalfTextContainer p {
+    position: relative;
+    margin: 3%;
+}
+
+.polygonMiddleUpperHalfMedia {
+    margin-top: -20%;
+    margin-left: 15%;
+    width: 60%;
+    object-fit: cover;
+    z-index: inherit;
+}
+
+.polygonMiddleLowerHalf {
+    clip-path: polygon(45% 100%, 78.33333% 100%, 66.66666% 50%, 33.33333% 50%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonMiddleLowerMedia {
+    margin-top: 20%;
+    margin-left: 30%;
+    width: 55%;
+    object-fit: cover;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonRightLowerThird {
+    clip-path: polygon(78.33333% 100%, 100% 100%, 100% 66.66666%, 70.55555% 66.66666%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonRightLowerThirdMedia {
+    margin-top: 30%;
+    margin-left: 67%;
+    width: 33%;
+    object-fit: cover;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonRightMiddleThird {
+    clip-path: polygon(62.77777% 33.33333%, 100% 33.33333%, 100% 66.66666%, 70.55555% 66.66666%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonRightMiddleThirdTextContainer {
+    top: 33.33333%;
+    left: 65%;
+    width: 30%;
+    height: 33%;
+    position: relative;
+    overflow: hidden;
+    z-index: inherit;
+    text-align: center;
+}
+
+.polygonRightMiddleThird p {
+    position: relative;
+    margin: 3%;
+}
+
+.polygonRightUpperThird {
+    clip-path: polygon(62.77777% 33.33333%, 100% 33.33333%, 100% 0%, 55% 0%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.polygonRightUpperThirdMedia {
+    margin-top: -1vw;
+    margin-left: 50%;
+    width: 60%;
+    object-fit: cover;
+    z-index: inherit;
+    background-color: #2e2e2e;
+}
+
+.rightThirdContainer {
+    position: absolute;
+    right: 0vw;
+    top: 0vh;
+    height: 100vh;
+    width: 35vw;
+}
+
+.rightThirdMedia {
+    height: 100%;
+    width: auto;
+    right: 0vw;
+    top: 0vh;
+}
+
+.codeContainer {
+    left: 0vw;
+    top: 0vh;
+    height: 100vh;
+    width: 65vw;
+    overflow: hidden;
+}
+
+.codeMedia {
+    height: 100%;
+}
+
+.programmingTextContainer {
+    border-radius: 25px;
+    background-color: black;
+    opacity: 0.65;
+    top: 20vh;
+    height: 60vh;
+    right: 5vw;
+    width: 25vw;
+}
+
+.projmanCornerTop {
+    clip-path: polygon(0% 0%, 0% 55%, 40% 0%);
+    background-color: #81d2f8ce;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.projmanCornerBottom {
+    clip-path: polygon(10% 100%, 40% 100%, 40% 65%);
+    background-color: #81d2f8ce;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.projmanLeftContainer {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height: 100vh;
+    width: 40vw;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.projmanLeftMedia {
+    margin-top: 23vh;
+    left: 0vh;
+    width: 100%;
+    height: auto;
+    z-index: inherit;
+}
+
+.timelineContainer {
+    background-color: #81d2f8ce;
+    position: absolute;
+    top: 0vh;
+    height: 100vh;
+    right: 0vw;
+    width: 60vw;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.timelineImgContainer {
+    position: relative;
+    height: 65%;
+    width: 100%;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.timelineImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: inherit;
+}
+
+.timelineHidden {
+    display: none;
+    z-index: inherit;
+}
+
+.timelineShow {
+    display: inline-block;
+    z-index: inherit;
+}
+
+.timelineTextContainer {
+    position: absolute;
+    color: white;
+    top: 70vh;
+    height: 20vh;
+    right: 0vw;
+    width: 55vw;
+    margin: 2%;
+    text-align: center;
+}
+
+.timelineTextContainer h2 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-top: -1vh;
+    margin-bottom: -2vh;
+}
+
+.timelineTextContainer p {
+    font-size: 1vw;
+}
+
+.timelineLine {
+    border-radius: 0.5vh;
+    background-color: white;
+    top: 70vh;
+    right: 2vw;
+    width: 53vw;
+    height: 1vh;
+    position: absolute;
+    overflow: hidden;
+    z-index: inherit;
+}
+
+.timelineTruck {
+    color: white;
+    top: 65vh;
+    right: 52.50vw;
+    font-size: 2.2vw;
+    position: absolute;
+    z-index: inherit;
+    transition: 1s ease-in-out
+}
+
+.timelineSign {
+    color: white;
+    top: 65vh;
+    font-size: 2.22vw;
+    position: absolute;
+    cursor: pointer;
+}
+
+.timelineSignActive {
+    color: #2e2e2e !important;
+}
+
+
+/* width of a hex is 10.41667vw
+                    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 10 23
+	height of a hex is 18.48453vh */
+
+.hex0 {
+    top: 11vw;
+    left: 9.5vw;
+    position: absolute;
+    display: block;
+}
+
+.hex1 {
+    top: 11vw;
+    left: 9.5vw;
+    position: absolute;
+    display: block;
+}
+
+.hex2 {
+    top: 5.5vw;
+    left: 0vw;
+    position: absolute;
+    display: block;
+}
+
+.hex3 {
+    top: 0vw;
+    left: 9.5vw;
+    position: absolute;
+    display: block;
+}
+
+.hex4 {
+    top: 5.5vw;
+    right: 0vw;
+    position: absolute;
+    display: block;
+}
+
+.hex5 {
+    top: 16.5vw;
+    right: 0vw;
+    position: absolute;
+    display: block;
+}
+
+.hex6 {
+    top: 22vw;
+    left: 9.5vw;
+    position: absolute;
+    display: block;
+}
+
+.hex7 {
+    top: 16.5vw;
+    left: 0vw;
+    position: absolute;
+    display: block;
+}
+
+
+/* End of containers */
+
+
+/* Start of hex buttons */
+
+#hex0ButtonText,
+#hex1ButtonText,
+#hex2ButtonText,
+#hex3ButtonText,
+#hex4ButtonText,
+#hex5ButtonText,
+#hex6ButtonText,
+#hex7ButtonText {
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125vw;
+    color: white;
+    z-index: inherit;
+    margin-top: 37.5%;
+}
+
+.hex:hover #hex0ButtonText,
+.hex:hover #hex1ButtonText,
+.hex:hover #hex2ButtonText,
+.hex:hover #hex3ButtonText,
+.hex:hover #hex4ButtonText,
+.hex:hover #hex5ButtonText,
+.hex:hover #hex6ButtonText,
+.hex:hover #hex7ButtonText {
+    background-color: #81d2f8ce;
+    pointer-events: none;
+    position: relative;
+}
+
+.hexGroup {
+    width: 30.5vw;
+    height: 32vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.hex img {
+    position: absolute;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    height: 9.8vw;
+    width: 11.27vw;
+    overflow: hidden;
+    margin: 1%;
+    background-color: #2e2e2e;
+    transition: all 0.5s;
+    z-index: inherit;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+}
+
+.hex:hover img {
+    position: absolute;
+    height: 9.8vw;
+    width: 11.27vw;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    background-color: white;
+}
+
+.hex {
+    position: absolute;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    height: 10vw;
+    width: 11.5vw;
+    overflow: hidden;
+    background-color: white;
+    z-index: inherit;
+}
+
+.hexCADShadow {
+    position: absolute;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    height: 11vw;
+    width: 12.65vw;
+    overflow: hidden;
+    background-color: #2e2e2e2e;
+    z-index: inherit;
+    display: block;
+    pointer-events: none;
+}
+
+
+/* End of hex buttons */
+
+
+/* LOADER START*/
+
+#hiddenBody {
+    position: absolute;
+    background: #2e2e2e;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2000;
+    top: 0%;
+    left: 0%;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+}
+
+#hexLoader {
+    display: block;
+    z-index: 2000;
+}
+
+#hexLoaderText {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125vw;
+    color: white;
+    z-index: 2500;
+    height: 100vh;
+    width: 100vw;
+}
+
+#hexLoaderText p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader {
+    animation: spin 2s linear infinite;
+}
+
+.innerHexLoader {
+    position: absolute;
+    clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    -webkit-clip-path: polygon(0% 50%, 25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%);
+    height: 9.8vw;
+    width: 11.27vw;
+    overflow: hidden;
+    background-color: #2e2e2e;
+    z-index: inherit;
+    top: .1vw;
+    left: .115vw;
+}
+
+.hexLoaderContainer {
+    height: 10vw;
+    width: 11.5vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+/* End LOADER */
+
+
+/* Start of fade-in animation */
+
+.fade-in {
+    animation: fadeIn ease .01s;
+    -webkit-animation: fadeIn ease .01s;
+    -moz-animation: fadeIn ease .01s;
+    -o-animation: fadeIn ease .01s;
+    -ms-animation: fadeIn ease .01s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* End of fade in animation */
+
+
+/* Start of fade out animation */
+
+.fade-out {
+    animation: fadeOut ease 1s;
+    -webkit-animation: fadeOut ease 1s;
+    -moz-animation: fadeOut ease 1s;
+    -o-animation: fadeOut ease 1s;
+    -ms-animation: fadeOut ease 1s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
