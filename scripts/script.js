@@ -1,5 +1,8 @@
 window.onload = function() {
     showPage();
+    document.getElementById("hex0Button").addEventListener("click", function() {
+        loadImg("hex1Img", "hex0Button", "hex1ButtonBackground")
+    })
     document.getElementById("hex1Button").addEventListener("click", function() {
         loadImg("hex1Img", "hex1Button", "hex1ButtonBackground")
     })
@@ -78,6 +81,9 @@ function loadImg(hexImageString, hexButtonString, hexButtonBackgroundString) {
         document.getElementById(hexImageString).classList.remove("fade-in");
         document.getElementById(hexImageString).classList.add("fade-out");
         document.getElementById(hexButtonString).style.zIndex = 10;
+        if (document.getElementById(hexTextBackground).innerText == "START") {
+            document.getElementById(hexButtonString).style.display = "none";
+        }
         document.getElementById(hexTextBackground).innerText = hexTextHolder;
         document.getElementById(hexButtonBackgroundString).src = hexButtonBackgroundImgString;
         document.getElementById(hexButtonBackgroundString).style.backgroundColor = "#81d2f8ce";

@@ -24,7 +24,7 @@ body {
 
 .AboutTextBoxContainer {
     position: absolute;
-    width: 38%;
+    width: 40%;
     height: 85%;
     top: 10%;
     left: 56%;
@@ -851,7 +851,7 @@ p.leftHalfText {
     color: white;
     top: 65vh;
     right: 52.50vw;
-    font-size: 1.25vw;
+    font-size: 2.2vw;
     position: absolute;
     z-index: inherit;
     transition: 1s ease-in-out
@@ -860,7 +860,7 @@ p.leftHalfText {
 .timelineSign {
     color: white;
     top: 65vh;
-    font-size: 1.25vw;
+    font-size: 2.22vw;
     position: absolute;
     cursor: pointer;
 }
@@ -873,6 +873,13 @@ p.leftHalfText {
 /* width of a hex is 10.41667vw
                     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); 10 23
 	height of a hex is 18.48453vh */
+
+.hex0 {
+    top: 11vw;
+    left: 9.5vw;
+    position: absolute;
+    display: block;
+}
 
 .hex1 {
     top: 11vw;
@@ -929,6 +936,7 @@ p.leftHalfText {
 
 /* Start of hex buttons */
 
+#hex0ButtonText,
 #hex1ButtonText,
 #hex2ButtonText,
 #hex3ButtonText,
@@ -945,6 +953,7 @@ p.leftHalfText {
     margin-top: 37.5%;
 }
 
+.hex:hover #hex0ButtonText,
 .hex:hover #hex1ButtonText,
 .hex:hover #hex2ButtonText,
 .hex:hover #hex3ButtonText,
