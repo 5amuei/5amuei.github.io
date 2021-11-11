@@ -77,7 +77,7 @@ function scrolled(hexImageString) {
     hexImageEnd = hexImageString + "End";
     hexBounceScrolled = hexImageString + "Scroll";
     var endPoints = document.getElementById(hexImageEnd).getBoundingClientRect();
-    if (window.innerHeight > endPoints.top - 100) {
+    if (window.innerHeight > endPoints.top - 1) {
         document.getElementById(hexBounceScrolled).style.display = "none";
     } else {
         document.getElementById(hexBounceScrolled).style.display = "initial";
