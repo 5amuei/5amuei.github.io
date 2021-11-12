@@ -20,11 +20,9 @@
             if (/Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 siteString = "<meta http-equiv='Refresh' content=" + "\"" + "0; url='https://christensen.engineer/mobile.html'" + "\"" + "/>"
                 console.log("mobile");
-                return;
             } else {
                 siteString = "<meta http-equiv='Refresh' content=" + "\"" + "0; url='https://christensen.engineer/main.html'" + "\"" + "/>"
                 console.log("not mobile");
-                return;
             }
             document.write(siteString)
         }
