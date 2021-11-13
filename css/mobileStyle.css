@@ -141,9 +141,6 @@ h3.text {
     height: 4vh;
     width: auto;
     pointer-events: none;
-    margin-left: 2.5%;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
     filter: invert(1);
 }
 
@@ -539,11 +536,6 @@ h3.text {
     animation-timing-function: ease;
 }
 
-.chevronBounce {
-    animation-name: chevronBounce;
-    animation-timing-function: ease;
-}
-
 @keyframes scrollBounce {
     0% {
         transform: translateY(0);
@@ -571,35 +563,5 @@ h3.text {
     }
     100% {
         -webkit-transform: translateY(0);
-    }
-}
-
-@keyframes chevronBounce {
-    0% {
-        transform: translatex(0);
-    }
-    30% {
-        transform: translatex(-2vw);
-    }
-    50% {
-        transform: translatex(0);
-    }
-    100% {
-        transform: translatex(0);
-    }
-}
-
-@-webkit-keyframes chevronBounce {
-    0% {
-        -webkit-transform: translatex(0);
-    }
-    30% {
-        -webkit-transform: translatex(-2vw);
-    }
-    50% {
-        -webkit-transform: translatex(0);
-    }
-    100% {
-        -webkit-transform: translatex(0);
     }
 }
